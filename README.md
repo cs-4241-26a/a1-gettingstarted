@@ -1,16 +1,6 @@
 
-
-*Technical Achievements*
-1. (5 points) Style your page using CSS. Each style rule you apply will get you 1 point for a maximum of 5 points. Be sure to describe your style rules in your README.
-    Style Rules: 
-
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.). Each extra tag you use will get you 1 point for a maximum of 5 points. Be sure to describe the tags you use in your README.
-
----
-
 Sylvia Jacobs
-http://a1-sylviajacobs.onrender.com
+https://a1-sylviajacobs.onrender.com
 
 This project shows a basic website with some standard "about me" information, with styling in css. 
 

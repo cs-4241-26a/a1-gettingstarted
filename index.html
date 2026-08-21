@@ -1,28 +1,134 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        :root {
+          --header-primary: #1C0C61;
+          --header-secondary: #422F94;
+          --text-primary: #7967C7;
+          --bg-primary: #E6E0FF;
+          --bg-secondary: #C1B4FA;
+        }
+        .bg-primary-table {
+          background-color: var(--bg-primary);
+          color: black;
+          height: 32px;
+        }
+        .bg-secondary-table {
+          background-color: var(--bg-secondary);
+          color: black;
+        }
+        .header-primary-table {
+          background-color: var(--header-primary);
+          color: white;
+        }
+        .header-secondary-table {
+          background-color: var(--header-secondary);
+          color: white;
+        }
+        .text-primary-table {
+          background-color: var(--text-primary);
+          color: black;
+        }
+        body {
+          background-color: var(--bg-primary);
+          font-family: 'Roboto', sans-serif;
+        }
+        h1 {
+          color: var(--header-primary);
+        }
+        h2 {
+          color: var(--header-secondary);
+        }
+        p {
+          color: var(--text-primary);
+          text-align: left;
+          margin-left: 32px;
+        }
+        ul {
+          color: var(--text-primary);
+        }
+        footer {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        }
+        header {
+          background-color: var(--bg-secondary);
+          padding: 10px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 64px;
+        }
+        .label {
+          color: var(--text-primary);
+          text-align: left;
+          margin-left: 0px !important;
+        }
+        table {
+          color: var(--text-primary);
+          border: 1px solid var(--bg-secondary);
+        }
+        td {
+          border: 1px solid var(--bg-secondary);
+          text-align: center;
+          padding: 8px;
+        }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <header>
+      <h1>Information about Sylvia Jacobs</h1>
+    </header>
     <p>
-      [Self introduction]
+      Class of WPI 2028
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major, Business and Data Science Minors
     </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h2> Previous Classes </h2>
+      <ul>
+        <li>CS3733</li>
+        <li>CS2303</li>
+        <li>CS2223</li>
+        <li>CS2011</li>
+        <li>CS3013</li>
+        <li>CS3516</li>
+      </ul>
+    <h2>Experience with Languages</h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML - Some</li>
+      <li>CSS - Some, about equal to HTML maybe a little more</li>
+      <li>JavaScript - Minimal, TypeScript - Some, more than HTML</li>
     </ul>
+    <footer>
+      <p class="label">Color Wheel</p>
+      <a href="https://color.adobe.com/library?color-palette=1C0C61%2C422F94%2C7967C7%2CC1B4FA%2CE6E0FF&color-palette-name=a1cs4241">
+          <img src="colorwheela1-4241.png" alt="colorwheel" height="96px" width="96px">
+      </a>
+    </footer>
+    <table>
+      <tr>
+        <td>--bg-primary</td>
+        <td>--bg-secondary</td>
+        <td>--header-primary</td>
+        <td>--header-secondary</td>
+        <td>--text-primary</td>
+      </tr>
+      <tr>
+        <td class="bg-primary-table"> #E6E0FF</td>
+        <td class="bg-secondary-table">#C1B4FA</td>
+        <td class="header-primary-table">#1C0C61</td>
+        <td class="header-secondary-table">#422F94</td>
+        <td class="text-primary-table">#7967C7</td>
+      </tr>
+    </table>
   </body>
 </html>

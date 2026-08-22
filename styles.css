@@ -1,12 +1,40 @@
 body {
-  background: #f7fbfc;
-  font-family: Arial, Helvetica, sans-serif;
+    background: #F9E0D9;
+    font-family: "Inter", Helvetica, sans-serif;
+    max-width: 800px;
+    margin: auto;
 }
 
 h1 {
-  color: #1f618d;
+    color: #5D4954;
+    font-size: 32px;
 }
 
-p {
-  color: #333333;
+h2 {
+    color: #754F5B;
+    border-bottom: 1px solid #7D6167;
+}
+
+a:hover {
+    color: #E6DBD0;
+}
+
+b {
+    color: #7D6167;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #7D6167;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+th {
+    background: #754F5B;
+    color: white;
 }

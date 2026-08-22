@@ -3,26 +3,111 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <!-- Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap"       rel="stylesheet">
+
+    
+
+    <style>
+        /* Adobe Color Palette (see a1-colorPalleteWillSchieffer.png) */
+        :root {
+          --header-primary: #7A3152;
+          --header-secondary: #472B38;
+          --text-primary: #33292D;
+          --bg-primary: #E00066;
+          --bg-secondary: #AD2361;
+        }
+
+        .unkempt-regular {
+          font-family: "Unkempt", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .unkempt-bold {
+          font-family: "Unkempt", cursive;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        body {
+          background-color: var(--bg-primary);
+          color: var(--text-primary);
+          font-family: "Unkempt", cursive;
+          font-weight: 400;
+          text-align: center; /* Style rule #1 */
+        }
+
+        p {
+          color: var(--text-primary);
+          margin: 20px;
+          line-height: 1.6; /* Style rule #2 */
+        }
+
+        h1 {
+          color: var(--header-primary);
+          font-size: 2.5em; /* Style rule #3 */
+        }
+
+        h2 {
+          color: var(--header-secondary);
+        }
+
+        h1, h2{
+          font-family: "Unkempt", cursive;
+          font-weight: 700;
+        }
+
+        ul {
+          color: var(--text-primary);
+          background-color: var(--bg-secondary);
+          border: 3px solid var(--header-secondary);
+          border-radius: 10px; /* Style rule #4 */
+        }
+
+        /* Style rule #5 */
+        li {
+          padding: 8px;
+          transition: background-color 0.2s;
+        }
+
+        li:hover {
+          color: white;
+          background-color: var(--header-primary);
+        }
+
+    </style>
+
+
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h1>Information about Will Schieffer</h1>
+    <h2>
+    Class of 2027
+    </h2>
+    <h2>
+      Majoring in CS / IMGD
+    </h2>
+    <h2>
+      Relevant Coursework:
+    </h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 3733: Software Engineering</li>
+      <li>CS 3431: Database Systems 1</li>
+      <li>CS 3516: Computer Networks</li>
+      <li>CS 2303: System Programming Concepts</li>
+    </ul>
+
+    <h2>
+      Language Experience:
+    </h2>
+    <ul>
+      <li>Typescript: Most familiar</li>
+      <li>JavaScript: Less familiar, but have used in some projects</li>
+      <li>HTML/CSS: Familiar with the basics</li>
     </ul>
   </body>
 </html>

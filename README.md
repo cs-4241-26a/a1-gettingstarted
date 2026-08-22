@@ -85,13 +85,14 @@ Note that if you want to load resources besides your index.html file (images, an
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.onrender.com
+Will Schieffer
+http://a1-charlieroberts.onrender.com <-- Edit this later
 
-This project shows ...
+This is my attempt at A1 for Webware.
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added rules for body, p, h1, h2, ul, and li. These included effects like text-alignment, line height / margin, font size, borders, and hover effects
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Unkempt Font from Google Fonts**: I used Unkempt as the font for all text on my site.
+- **Designed and implemented a color pallete using Adobe**: I designed a monochromatic color pallette for my site, and implemented all five colors across the page.

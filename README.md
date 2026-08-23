@@ -12,4 +12,4 @@ This project shows a basic website with some standard "about me" information, wi
 
 ## Design Achievements
 **Color Palette made in adobe**: Created a color palette in adobe which was used for the website, with a screenshot of the wheel as shown in the creator in the footer. Each was used for something.
-- **Used the Roboto Font from Google Fonts**: Roboto used as the font for the entire website
+**Used the Roboto Font from Google Fonts**: Roboto used as the font for the entire website

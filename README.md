@@ -2,6 +2,8 @@ Brody Graham
 
 This project shows my work for the first assignment.
 
+Website on Render: https://a1-brodygraham.onrender.com/
+
 ## Technical Achievements
 **Styled page with CSS**: Added rules for the following selectors:
 - body

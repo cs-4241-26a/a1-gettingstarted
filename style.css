@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+	--color-1: #c5e9f2;
+	--color-2: #97b7bf;
+	--color-3: #53818c;
+	--color-4: #234e59;
+	--color-5: #0a2b33;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter";
+	color: var(--color-1);
+	background-color: var(--color-5);
+}
+
+header,
+footer {
+	margin: 3rem;
+}
+
+main {
+	margin: 2rem;
+	padding: 1rem;
+	background: var(--color-4);
+	border-radius: 1rem;
+	border: 1px solid var(--color-3);
+
+	li::marker {
+		color: var(--color-2);
+	}
+
+	table {
+		border-collapse: collapse;
+
+		th,
+		td {
+			padding: 0.5rem;
+			border: 1px solid var(--color-3);
+		}
+	}
+}
+
+footer {
+	color: var(--color-2);
+	font-style: italic;
+
+	a {
+		color: inherit;
+	}
+}

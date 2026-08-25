@@ -3,26 +3,140 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <style>
+      body {
+        min-height: 100vh;
+      	background: linear-gradient(
+    		to bottom,
+        /* Equivalent to #30A3FF from the palette*/
+    		rgba(48, 163, 255, 1),
+    		rgba(48, 163, 255, 0)
+				);
+      }
+      p, li {
+        padding: 0px 10px;
+        font-family: "Short Stack", cursive;
+      }
+      h1, h2 {
+      	font-family: "Michroma", sans-serif;
+      }
+      ul {
+    		width: fit-content;
+    		margin: 0 auto;
+    		text-align: left;
+			}
+      main {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "major classes"
+          "experience classes"
+          "viewer viewer";
+        grid-template-columns: 2fr 2fr;
+        gap: 3px;
+        margin: 0vh 10vw;
+      }
+      header, section {
+        text-align: center;
+        background-color: #CDECF4;
+        border: 4px solid #292948;
+        border-radius: 10px;
+        text-align: center;
+      }
+      button {
+        font-family: "Michroma", sans-serif;
+        background-color: #30A3FF;
+        border-radius: 15px;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+      }
+			button:hover {
+  			background-color: #ACF2B8;
+  			color: black;
+        box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+			}
+      #randomImage {
+        position: relative;
+        transition: transform 0.5s ease;
+      }
+      .slide-out {
+        transform: translateX(100vw);
+      }
+      .slide-in {
+        transform: translateX(-100vw);
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #292948;
+        text-align: center;
+        z-index: 1000;
+        box-sizing: border-box;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        color: white;
+        font-family: "Short Stack", cursive;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <main>
+  		<header style="grid-area: header">
+        <h1>Information about Noah Freeman</h1>
+      </header>
+  		<section style="grid-area: major">
+        <h2>Majors</h2>
+        <p>
+      		Double majoring in RBE and CS
+    		</p>
+      </section>
+  		<section style="grid-area: classes">
+        <h2>CS Classes</h2>
+        <ul>
+          <li>CS 2102</li>
+          <li>CS 2223</li>
+          <li>CS 2022</li>
+          <li>CS 2303</li>
+          <li>CS 340X</li>
+          <li>CS 3431</li>
+          <li>CS 3733</li>
+          <li>CS 4341</li>
+        </ul>
+      </section>
+  		<section style="grid-area: experience">
+      	<h2>Experience</h2>
+    		<p>
+      		Two years of interning at General Dynamics Electric Boat on a web development team. Quite familiar with fullstack development with js, ts, React, Nodejs, etc.
+    		</p>
+      </section>
+      
+      <section style="grid-area: viewer">
+        <br><br>
+        <img id="randomImage" src="" alt="Silly Guy" width="500">
+    		<br><br>
+    		<button id="randomButton">Gimme a Cat!</button>
+				<br><br>
+        <script src="script.js"></script>
+      </section>
+		</main>
+    <footer>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ?autoplay=1&mute=1">Link?</a>
+    </footer>
   </body>
 </html>

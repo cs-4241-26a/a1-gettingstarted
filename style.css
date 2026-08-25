@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Fira Mono', monospace;
+    background-color: #804600;
+}
+
+header,
+section,
+footer {
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    background-color: #ae6302;
+}
+
+section {
+    min-width: 33%;
+    background-color: #facd92;
+
+    @media screen and (width > 900px) {
+        min-height: 70vh;
+    }
+
+    &:nth-child(2) {
+        background-color: #ddaa66;
+    }
+}
+
+footer {
+    color: white;
+    background-color: #804600;
+    
+    a {
+        color: white;
+    }
+}
+
+main {
+    @media screen and (width > 900px) {
+        display: flex;
+    }
+}

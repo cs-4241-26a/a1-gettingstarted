@@ -3,6 +3,7 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1>Information about Myer Cheng</h1>
@@ -22,13 +23,11 @@
         I like to listen to music/go to concerts, play video games, and eat.
     </p>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h3>Working experience</h3>
     <ul>
       <li>EQengineered</li>
     </ul>
-    <p>CS classes taken at WPI</p>
+    <h3>CS classes taken at WPI</h3>
     <ul>
         <li>CS1102</li>
         <li>CS2103</li>
@@ -43,14 +42,50 @@
         <li>CS4233</li>
     </ul>
 
-    <p>Technologies</p>
-    <ul>
-        <li>HTML: Some (leaning No) experience</li>
-        <li>CSS: Some (leaning No) experience</li>
-        <li>JavaScript/TypeScript: A lot of experience</li>
-    </ul>
+    <h3>Technologies</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Technology</th>
+            <th>Experience</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Some (leaning No) experience</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Some (leaning No) experience</td>
+            </tr>
+            <tr>
+                <td>JavaScript/TypeScript</td>
+                <td>A lot of experience</td>
+            </tr>
+        </tbody>
+    </table>
 
   <h2>Extras</h2>
-  <img src="public/IMG20260816180032.jpeg" alt="A picture of my bunny, Caramel">
+    <h3>My Pet</h3>
+    <div class="image-div">
+        <img src="public/IMG20260816180032.jpeg" alt="A picture of my bunny, Caramel">
+    </div>
+    <h3>My Blog</h3>
+    <p>Most recent post: <a href="https://www.myer.wtf/blog/ai-wont-take-your-job/" target="_blank" rel="noopener noreferrer">AI Won't Take Your Job.</a></p>
   </body>
+    <h3>Q&A</h3>
+    <details>
+        <summary>How are you a junior with barely any HTML/CSS experience?</summary>
+        Most people start out in programming/CS with making a website or web app. I started out making Discord bots, so
+        I only specialized in backend logic and database integration. I have very little skills in frontend development
+        due to this background, but am putting in the effort to learn.
+    </details>
+    <details>
+        <summary>What Discord bots did you make?</summary>
+        My first Discord bots were simple, private bots that pulled players' statistics about a game from a public API.
+        The bot expanded to being a last.fm bot as well (querying an API about music listening habits).
+        My largest Discord bot was a verification/account linking bot for a game that linked peoples' Discord profile
+        to their Minecraft account. This bot was used by 70k people at its peak.
+    </details>
 </html>

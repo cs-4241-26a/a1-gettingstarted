@@ -1,0 +1,13 @@
+* {
+    font-family: sans-serif;
+    color: black;
+}
+
+table {
+    border: 1px solid black;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+}

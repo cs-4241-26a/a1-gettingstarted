@@ -3,26 +3,62 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
+    <h1>Information about Ryan</h1>
+    <div class="information spinning-card" title="click me!">
+        <p>Ryan Carignan</p>
+        <p>CS Major - Class of 2028</p>
+    </div>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="experience spinning-card" title="click me!">
+        <div>
+            <h3>
+              Working experience
+            </h3>
+            <ul>
+              <li>Intact/Dewar</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Some previous CS courses</h3>
+            <ul>
+                <li>Software Engineering</li>
+                <li>Object-Oriented Design Concepts</li>
+                <li>Operating Systems</li>
+                <li>Algorithms</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Web Technologies</h3>
+            <table>
+                <tr>
+                    <th>Technology</th>
+                    <th>Experience</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>A lot</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Some</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="heart">Typescript</td>
+                    <td>A lot</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h3>Interactive</h3>
+    <label for="background-color-picker">Try changing the background color!</label>
+    <input type="color" id="background-color-picker" class="color-picker" value="#f8f8ff" autocomplete="off">
   </body>
 </html>

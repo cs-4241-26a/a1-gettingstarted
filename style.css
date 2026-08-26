@@ -1,0 +1,98 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --border-color: black;
+}
+
+/* Sections */
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.experience h3 {
+    text-align: center;
+}
+
+.experience,
+.information {
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 2px 1px grey;
+    background-color: ghostwhite;
+}
+
+.color-picker {
+    margin-top: 0.5rem;
+}
+
+/* Table */
+table {
+    border-spacing: 0;
+    --table-border-radius: 0.5rem;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: var(--table-border-radius);
+}
+
+tr:first-child th:not(:first-child) {
+    border-left: none;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: var(--table-border-radius);
+}
+
+tr:not(:first-child) td {
+    border-top: none;
+}
+
+tr:not(:first-child) td:not(:first-child) {
+    border-left: none;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: var(--table-border-radius);
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: var(--table-border-radius);
+}
+
+/* Fun Animation */
+.heart::after {
+    content: '❤️';
+    width: 2rem;
+    height: 2rem;
+    font-size: 0;
+    padding-left: 0.125rem;
+    transition: font-size 0.3s ease;
+}
+
+.heart:hover::after {
+    font-size: 0.75rem;
+}
+

@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color:#AFD19F;
+  }
+
+h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color:#522C50;
+  }
+
+h2 {
+    font-weight:bolder;
+    font-size: 64;
+    color:#522C50;
+  }
+
+p {
+    color:#522C50;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+ul {
+    background-color: #375C3B;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color:#CB8EFF;
+    border-radius: 10px;
+  }
+
+li:hover {
+    color: #FFFFFF;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    background-color: #375C3B;
+    border-radius: 10px;
+}

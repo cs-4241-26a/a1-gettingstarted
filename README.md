@@ -1,5 +1,5 @@
 Aidan Fisher
-https://a1-aidanfisher.onrender.com
+https://a1-gettingstarted-nh9n.onrender.com/
 
 This project is a basic personal info page built as part of learning Git, GitHub, and Render deployment. It displays my background, experience, and some fun facts, styled with custom CSS and a small JavaScript interaction.
 

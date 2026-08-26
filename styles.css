@@ -1,0 +1,36 @@
+body {
+    background-color: #ADAFC9; /* Color 1*/
+    font-family: 'Stack Sans Notch', sans-serif;
+    text-align : center;
+}
+
+h1 {
+ color: #111333; /* Color 2*/
+}
+
+ul {
+    background-color: #6F7196; /* Color 3*/
+    border: 1px solid #111333;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+}
+ul.projects li {
+    list-style: circle;
+    margin: 0 auto;
+}
+
+li {
+    color : #111333;
+    list-style: none;
+}
+
+header {
+    background-color: #A6AAFD; /* Color 4*/
+    border: 1px solid #111333;
+    margin: 0 auto;
+}
+
+p {
+    color: #363863; /* Color 5*/
+}

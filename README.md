@@ -82,10 +82,10 @@ Note the highest grade you can receive is a 100%.
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.onrender.com
+Richard Newman
+https://a1-richardnewman-1.onrender.com/
 
-This project shows ...
+This project shows some information about myself, including the CS courses I have taken, my experience with HTML/CSS/JavaScript, and an extra photo of my dog.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, p, ul, img, and  element selectors; the "MyDog" class selector and some nested classes within it, and created a name for one of the base palettes of the Nabla color font.

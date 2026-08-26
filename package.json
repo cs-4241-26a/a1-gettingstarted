@@ -5,5 +5,8 @@
   "author": "Richard Newman",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "mime": "^3.0.0"
   }
 }

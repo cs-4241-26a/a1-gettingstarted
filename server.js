@@ -1,9 +1,11 @@
 const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+  fs = require('fs'),
+  port = 3000
 
-const server = http.createServer( function( request,response ) {
-  const stripped = request.url.slice(1)
+const server = http.createServer(function (request, response) {
+  const stripped = request.url.slice(1);
+  const mime = require('mime');
+  response.setHeader('Content-Type', mime.getType(stripped));
   if (request.url != '/') {
     sendFile(response, stripped);
   } else {
@@ -29,10 +31,10 @@ const server = http.createServer( function( request,response ) {
   */
 })
 
-server.listen( process.env.PORT || port )
+server.listen(process.env.PORT || port)
 
-const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
-   })
+const sendFile = function (response, filename) {
+  fs.readFile(filename, function (err, content) {
+    response.end(content, 'utf-8')
+  })
 }

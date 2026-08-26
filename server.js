@@ -4,6 +4,10 @@ const http = require('http'),
 
 const server = http.createServer( function( request,response ) {
   const stripped = request.url.slice(1)
+  if (request.url == 'css/main.css'){
+    response.setHeader("Content-Type", "text/css")
+    sendFile(response, 'css/main.css')
+  }
   if (request.url != '/') {
     sendFile(response, stripped)
   }

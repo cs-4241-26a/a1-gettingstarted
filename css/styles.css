@@ -1,0 +1,77 @@
+body {
+    background-color: #F5EEE9;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #34B4ED;
+    font-size: 1.1rem;
+    text-shadow: -1px 1px #373838;
+    margin-bottom: 6svh
+}
+
+@font-palette-values --bluepalette {
+    font-family: "Nabla";
+    base-palette: 2;
+}
+
+h1 {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 85,
+        "EHLT" 12;
+    font-size: 5dvw;
+    text-align: center;
+    font-palette: --bluepalette;
+    border: 4px solid #347BED;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #347BED;
+}
+
+p {
+    color: #34B4ED;
+    font-size: 1.1em;
+}
+
+ul {
+    font-size: 1.1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #347BED;
+    font-size: 1em;
+    width: 100%;
+    height: 4svh;
+    line-height: 4svh;
+    text-align: center;
+    color: #F5EEE9;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.MyDog {
+    max-width: min(100%, 750px);
+
+    .ImageCaption {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .MyDogImg {
+        border: 6px solid #2CEDEA;
+        border-radius: 2px;
+    }
+}

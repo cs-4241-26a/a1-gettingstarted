@@ -19,7 +19,7 @@ This project shows some basic static webpage design using HTML and CSS, and some
     - Added a heart animation on hover of "Typescript" on the table
         - Used `::after` pseudoelement and `transition` to create a heart pop-out animation when hovering over `.heart` elements
 - **Added simple JS animation**: cards spin on click
-    - Added an event listener to cards to allow them to run a `.animatE()` call on clicks
+    - Added an event listener to cards to allow them to run a `.animate()` call on clicks
 - **Experiment with other semantic HTML tags**:
     - `<table>`, `<tr>`, `<th>`, `<td>`
         - Used tables to better display information for the "Web Technologies" section

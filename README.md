@@ -4,7 +4,7 @@ a1-RyanCarignan
 Ryan Carignan
 http://a1-ryancarignan.onrender.com
 
-This project shows ...
+This project shows some basic static webpage design using HTML and CSS, and some simple JS.
 
 ## Technical Achievements
 - **Styled page with CSS**:

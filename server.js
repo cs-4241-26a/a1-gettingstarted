@@ -12,6 +12,7 @@ const server = http.createServer( function( request,response ) {
       sendFile( response, 'index.html' )
       break
     case '/style.css':
+      response.setHeader( 'Content-Type', 'text/css' )
       sendFile( response, 'style.css' )
       break
     default:

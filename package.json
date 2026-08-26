@@ -1,9 +1,12 @@
 {
-  "name": "a1-gettingstarted",
+  "name": "a1-RichardNewman",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
+  "author": "Richard Newman",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "mime": "^3.0.0"
   }
 }

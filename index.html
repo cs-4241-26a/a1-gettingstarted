@@ -1,28 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1>James Ostermiller</h1>
+    <detail-wrapper>
+      <details>
+        <summary>Major</summary>
+        Computer Science, class of 2028
+      </details>
+      <details>
+        <summary>Previous CS classes</summary>
+        <ul>
+          <li>CS 1102 - Accelerated Intro to Program Design</li>
+          <li>CS 2103 - Accelerated Object-Oriented Design Concepts</li>
+          <li>CS 2223 - Algorithms</li>
+          <li>CS 3133 - Foundations of CS</li>
+          <li>CS 3013 - Operating Systems</li>
+          <li>CS 2022 - Discrete Mathematics</li>
+          <li>CS 2011 - Intro to Machine Organization and Assembly Language</li>
+          <li>CS 3431 - Database Systems</li>
+          <li>CS 3733 - Software Engineering</li>
+          <li>CS 3043 - Social Implications of Information Processing</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Web language experience</summary>
+        <ul>
+          <li>HTML: A lot</li>
+          <li>CSS: A lot</li>
+          <li>JavaScript: some</li>
+        </ul>
+      </details>
+    </detail-wrapper>
+    <detail-buttons>
+      <button type="button" onclick="openDetails()">Open all</button>
+      <button type="button" onclick="closeDetails()">Close all</button>
+    </detail-buttons>
+  </main>
+  <footer>
+    Source:
+    <a href=https://github.com/jstrmllr-wpi/a1-jamesostermiller>github</a>
+  </footer>
+
+  <script>
+    function openDetails(){
+      const elems = document.getElementsByTagName('details')
+      for(let i = 0; i < elems.length; i++){
+        elems[i].setAttribute('open', '');
+      }
+    }
+    function closeDetails(){
+      const elems = document.getElementsByTagName('details')
+      for(let i = 0; i < elems.length; i++){
+        elems[i].removeAttribute('open');
+      }
+    }
+  </script>
+</body>
+
 </html>

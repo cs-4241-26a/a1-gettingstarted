@@ -1,0 +1,122 @@
+
+:root{
+    /* ORIGINAL COLORS (for reference) */
+    /* --color1:#0B3D32;
+    --color2:#3D310B;
+    --color3:#3A0B3D;
+    --color4:#4B9283;
+    --color5:#BDAE80; */
+
+    /* EDITED CONTRAST */
+    --color1:#0B3D32;
+    --color2:#776F54;
+    --color3:#3A0B3D;
+    --color4:#4B9283;
+    --color5:#D1C6A6;
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    color:var(--color5);
+    font-family:monospace;
+    font-size:13px;
+}
+body{
+    height:100lvh;
+    padding:10px;
+    overflow:hidden;
+    background-color:var(--color4);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+main{
+    padding:20px;
+    position:relative;
+    width:100%;
+    max-width:750px;
+    border:4px dotted var(--color5);
+    overflow-y:auto;
+    overscroll-behavior:none;
+    flex-grow:1;
+}
+h1, detail-wrapper{
+    display:block;
+    border:2px solid var(--color5);
+    width:100%;
+    margin-top:20px;
+    background-color:var(--color1);
+}
+h1{
+    text-align:center;
+    margin-top:0;
+    padding:10px;
+    font-family: "Major Mono Display";
+    font-size: 26px;
+}
+details{
+    border-bottom:2px solid var(--color5);
+    padding:10px;
+    &[open]{
+    summary{
+        border-bottom:2px solid var(--color5);
+        margin-bottom:10px;
+    }
+    }
+    &:last-of-type{
+        border-bottom:0;
+    }
+}
+summary{
+    padding:10px;
+    margin:-10px;
+    font-weight:bold;
+    text-align:center;
+    &:hover{
+        background-color:var(--color3);
+    }
+}
+detail-buttons{
+    display:block;
+    width:max-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    @media (scripting:none){
+        display:none;
+    }
+}
+button{
+    padding:10px;
+    width:max-content;
+    text-transform:uppercase;
+    margin-left:auto;
+    margin-right:auto;
+    font:inherit;
+    font-weight:bold;
+    font-size:small;
+    background-color:var(--color2);
+    border:2px solid var(--color5);
+    &:hover{
+        background-color:var(--color3);
+        border-color:var(--color2);
+    }
+}
+ul{
+    padding-left:20px;
+    list-style-type:"\2604 ";
+    > li {
+        padding-left:10px;
+        &::marker{
+            font-size:20px;
+        }
+    }
+}
+footer{
+    padding:10px 10px 0;
+    flex-basis:content;
+}
+/* @media screen and (min-width:800px){
+
+} */

@@ -1,28 +1,254 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
+  <style>
+    body {
+      font-family: "Valley Sans", sans-serif;
+      background-color: #D4C7C7;
+      color: #CF2917;
+    }
+
+    ul {
+    list-style-image: url('https://www.shareicon.net/data/2015/05/27/45065_star_32x32.png'); 
+    }
+
+    h1 {
+      color: #360C0C;
+      font-size: 30px;
+      text-shadow: 0 0 3px #FF0000;
+    }
+
+    h2 {
+      color: #6B0D07;
+      font-size: 20px;
+    }
+
+    h3 {
+      color: #6B0D07;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #F7E6E6;
+      border:#360C0C;
+      color: #360C0C;
+      font-size: 30px;
+      font-family: "Valley Sans", sans-serif;
+      text-align: center;
+      display: inline-block;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+    }
+    .button:hover {
+      background-color: #6B0D07;
+      color: #D4C7C7;
+    } 
+
+
+  #myContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: #ED7A6D;
+    margin: 0 auto;
+  }
+
+  #myAnimation {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  }
+
+  footer {
+  background-color: #6B0D07;
+  color: #D4C7C7;
+  padding: 8px;
+  text-align: center;
+  font-family: "Valley Sans", sans-serif;
+  }
+
+  table, td, th {
+    border: 1px solid #360C0C;
+    background-color: #F7E6E6;
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    background-color: #F7E6E6;
+  }
+
+
+
+
+
+
+  </style>
+
+
+
+
+
+
+  <body>
+    <h1>Information about Becca Eiferman</h1>
     <p>
-      Working experience
+    Becca Eiferman - Class of 2028
     </p>
+    <p>
+      I am a Computer Science + Data Science double major
+    </p>
+    <h2>
+      Previous CS Classes i've taken at WPI:
+    </h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      CS 1101, CS 2101, CS 2022, CS2303, CS 2223, CS 3431, CS3133,
+      <br>CS 3013, CS 4341, now CS4241!
     </ul>
+    <h2>
+      My Experience with these:
+    </h2>
+    <ul>
+      <li>HTML: none </li>
+      <li>CSS: none </li>
+      <li>JS / Typescript: none </li>
+      it's okay guys we're going to learn
+    </ul>
+    <h3>
+      Super Really Cool Animation:
+    </h3>
+
+    <div id ="myContainer">
+      <div id ="myAnimation">
+        <img src="https://em-content.zobj.net/thumbs/60/microsoft/310/black-heart_1f5a4.png" alt="Example">
+      </div>
+    </div>
+
+    <script>
+      var id = null;
+      myMove()
+      function myMove() {
+        var elem = document.getElementById("myAnimation");   
+        var pos = 0;
+        clearInterval(id);
+          id = setInterval(frame, 10);
+        function frame() {
+          if (pos >= 340) {
+            direction = -1; // Start moving backward
+          } else if (pos <= 0) {
+            direction = 1; // Start moving forward
+          }
+          pos += direction;
+          elem.style.top = pos + 'px';
+          elem.style.left = pos + 'px';
+        }
+      }
+    </script>
+
+    <h2>
+      More Cool Stuff:
+    </h2>
+
+    <button class="button">
+      Button
+    </button>
   </body>
+
+  <p>
+      You should totally hover over the button
+  </p>
+
+  <h2>
+    Previous CS Classes i've taken at WPI (again):
+    </h2>
+
+<table>
+  <tr>
+    <th>Class</th>
+    <th>Term</th>
+    <th>Year</th>
+  </tr>
+  <tr>
+    <td>CS 1101</td>
+    <td>A</td>
+    <td>2024</td>
+  </tr>
+  <tr>
+    <td>CS 2102</td>
+    <td>B</td>
+    <td>2024</td>
+  </tr>
+  <tr>
+    <td>CS 2022</td>
+    <td>C</td>
+    <td>2025</td>
+  </tr>
+  <tr>
+    <td>CS 2303</td>
+    <td>C</td>
+    <td>2025</td>
+  </tr>
+    <tr>
+    <td>CS 2223</td>
+    <td>D</td>
+    <td>2025</td>
+  </tr>
+    <tr>
+    <td>CS 3431</td>
+    <td>A</td>
+    <td>2025</td>
+  </tr>  <tr>
+    <td>CS 3043</td>
+    <td>B</td>
+    <td>2025</td>
+  </tr>  <tr>
+    <td>CS 3133</td>
+    <td>C</td>
+    <td>2026</td>
+  </tr>
+    <tr>
+    <td>CS 3013</td>
+    <td>C</td>
+    <td>2026</td>
+  </tr>
+    <tr>
+    <td>CS 4342</td>
+    <td>E</td>
+    <td>2026</td>
+  </tr>
+    <tr>
+    <td>CS 4241</td>
+    <td>A</td>
+    <td>2026</td>
+  </tr>
+</table>
+
+  <h2>
+    Cute Dog:
+  </h2>
+
+  <figure>
+    <img src="https://tse1.mm.bing.net/th/id/OIP.3H94J_KNLW8-T-f11VjiSgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="width:25%">
+    <figcaption>Look at this picture i found
+      <br> so cuteee
+    </figcaption>
+  </figure>
+
+
+  <footer>
+    <p>Footer!
+      <br> yay HTML and CSS
+    </p>
+  </footer>
+
 </html>

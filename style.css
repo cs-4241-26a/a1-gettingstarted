@@ -1,0 +1,56 @@
+/* Color palette: */
+/* https://color.adobe.com/create/color-wheel?color-palette=F0CA00%2C70633C%2CFFFCF0%2C000E33%2C152861&color-palette-name=My+Color+Theme&tab=image */
+
+:root {
+    --header-color: #000E33;
+    --bg-color: #152861;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: var(--header-color);
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+main {
+    background-color: #FFFCF0;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: "Bitcount", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0.5,
+            "ELSH" 0,
+            "ELXP" 0;
+    color: #F0CA00;
+    text-shadow: #70633C 2px 4px 2px;
+    margin: 5px;
+}
+
+h2 {
+    font-family: "Bitcount", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0.5,
+            "ELSH" 0,
+            "ELXP" 0;
+}

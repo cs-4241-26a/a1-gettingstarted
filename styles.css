@@ -1,8 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .image-div {
     width: 400px;
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+}
+
+.image-div img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+.animated-table tr {
+    transition: background-color 0.3s ease;
+}
+
+.animated-table tr:hover {
+    background-color: #f0f4f8;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
 }

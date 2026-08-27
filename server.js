@@ -28,7 +28,7 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    if( filename === 'main.css' ) {
-     response.setHeader( 'Content-Type', 'text/css' )
+     response.setHeader( 'Content-Type', mime.getType( filename ) )
    }
    fs.readFile( filename, function( err, content ) {
      response.end( content, 'utf-8' )

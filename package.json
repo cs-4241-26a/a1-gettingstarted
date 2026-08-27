@@ -2,6 +2,9 @@
   "name": "a1-hawthornwood",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
+  "dependencies": {
+    "mime": "^1.0.0"
+  },
   "author": "Hawthorn Wood",
   "scripts": {
     "start": "node server.js"

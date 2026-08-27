@@ -1,28 +1,125 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+<head>
+<title>CS4241 Assignment 1</title>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+<style>
+body {
+color: light-dark(#423469, #AFBAD9);
+background-color: light-dark(#efedea, #423469);
+}
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+code {
+color: light-dark(rgb(221, 89, 89), rgb(0, 61, 0));
+background-color: light-dark(black, white);
+padding-left: 0.3%;
+padding-right: 0.3%;
+padding-bottom: 0.1%;
+padding-top: 0.1%;
+font-weight: bold;
+border-radius: 5px;
+}
+
+:root {
+color-scheme: light dark;
+}
+
+:root:has(#theme-light:checked) {
+color-scheme: light;
+}
+
+:root:has(#theme-dark:checked) {
+color-scheme: dark;
+}
+
+button {
+  padding-inline: 1.8%;
+  border-radius: 20pt;
+  filter: drop-shadow(0 0 0.75rem #398DB3);
+  font-family: 'Rubik Spray Paint';
+  font-size: x-large;
+}
+
+h1 {
+font-family: 'Rubik Spray Paint', sans-serif;
+color: #398DB3;
+}
+
+header {
+background-color: #AFBAD9;
+text-align: center;
+}
+
+table {
+background-color: #AFBAD9;
+border: 2px solid #423469;
+filter: drop-shadow(0 0 0.75rem #398DB3);
+color: #423469;
+}
+
+a {
+color: #A4CCEE;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1>Information about David Peterson</h1>
+</header>
+<button id="dark-btn">Toggle Dark Mode</button>
+
+<p>David Peterson - Class of 2027</p>
+<p>Computer Science (BS/MS)</p>
+
+<h2>Experience</h2>
+<p>Previous Computer Science Classes:</p>
+<ul>
+<li>Operating Systems</li>
+<li>Computer Graphics</li>
+<li>Computer Animation</li>
+<li>Computer Networks</li>
+<li>Software Security</li>
+<li>Cryptography</li>
+<li>Multiplayer Networked Games</li>
+</ul>
+
+<p>Web Technologies:</p>
+<ul>
+<li><code>HTML</code>: 5/10, I have used it a bit in my on campus job / computer graphics classes, though not as much as JS/TS</li>
+<li><code>CSS</code>, 3/10, I have used it, but I try to avoid it when I can.</li>
+<li><code>JavaScript / Typescript</code>: 7/10, I used JS a lot in my graphics classes, and TS in an on campus internship.</li>
+</ul>
+
+<h2>My Current Courses</h2>
+
+<table>
+  <tr><th>Course</th><th>Professor</th></tr>
+  <tr><td>CS 4241</td><td>Charlie Roberts</td></tr>
+  <tr><td>CS 5084</td><td>Micheal Engling</td></tr>
+  <tr><td>CS 528</td><td>Yu-Shan Sun</td></tr>
+  <tr><td>MA 2621</td><td>Sajal Chakroborty</td></tr>
+</table>
+<br>
+
+<img id="anim-img" src="https://www.freeiconspng.com/uploads/ferns-png-8.png" width="320" alt="Fern">
+<br>
+
+<footer style="padding-left: 50%;">
+  <a href="https://ferns.fyi/">My Personal Website!</a>
+</footer>
+
+<script>
+document.getElementById('dark-btn').addEventListener('click', () => {
+  const root = document.documentElement;
+  root.style.colorScheme = root.style.colorScheme === 'dark' ? 'light' : 'dark';
+});
+
+document.getElementById('anim-img').animate([
+  { transform: 'rotate(0deg)' },
+  { transform: 'rotate(360deg)' }
+], { duration: 4000, iterations: Infinity });
+</script>
+</body>
 </html>

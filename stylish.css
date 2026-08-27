@@ -1,11 +1,12 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Grandstander", sans-serif;
 }
 
 body {
     background-image: url('Beach.jpg');
-    display: flex;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -32,6 +33,40 @@ h1, h2, h3 {
     text-align: center;
 }
 
+p {
+    font-size: large;
+}
+
 a {
     color: #3066e6;
+}
+
+header, footer {
+    width: 80%;
+    height: 50px;
+    background-color: #3066e6;
+    border: 10px solid #485166;
+    border-radius: 12px;
+    text-align: center;
+}
+
+header .left, footer .left {
+    float: left;
+    height: 100%;
+}
+
+header .right, footer .right {
+    float: right;
+    height: 100%;
+}
+
+header p, footer p {
+    color: white;
+}
+
+#spinn {
+    float: right;
+    margin: 10px 100px;
+    transform-origin: center center;
+    font-size: larger;
 }

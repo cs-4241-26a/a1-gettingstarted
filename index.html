@@ -5,9 +5,16 @@
   <title>CS4241 Assignment 1</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="stylish.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Grandstander">
 </head>
 
 <body>
+  <header>
+    <img class="left" src="smile.png" alt="yayay">
+    <img class="right" src="smile.png" alt="yayay">
+    <p>haha im up here</p>
+  </header>
+
   <div class="container">
     <div class="center">
       <h1>Information about Hawthorn Wood</h1>
@@ -18,24 +25,51 @@
         actually nerds gummy clusters* "what the hell"
       </p>
       <p>
-        Computer Science
-      </p>
-      <p>
         I make music and games. <a href="https://store.steampowered.com/app/5072820/MachWire_Demo/">Play it!!!</a> 
       </p>
     </div>
     <div class="center">
-      <h2>Experience</h2>
+      <h2>Experience as a CS Major</h2>
+      <p id="spinn"> woah</p>
       <p>
         Courses taken are CS1102, CS2011, CS2103, CS2223, CS2303, CS3013, CS3043, CS3133, CS3516
       </p>
       <ul>
         <li>Some HTML experience</li>
         <li>Some CSS experience</li>
-        <li>Worked with js once for my website, but can learn it quickly probably</li>
+        <li>Worked with js a bit for my <a href="https://hawthorn0.github.io/">website</a></li>
       </ul>
     </div>
   </div>
+
+  <footer>
+    <img class="left" src="smile.png" alt="yayay">
+    <img class="right" src="smile.png" alt="yayay">
+    <p>haha im down here too</p>
+  </footer>
+
+  <script>
+    var id = null;
+    function spinny() {
+      console.log("hey");
+      var spinner = document.getElementById("spinn");   
+      var spin = 0;
+      id = setInterval(frame, 10);
+      function frame() {
+        console.log(spin);
+        if (spin == 360) {
+          spin = 1;
+        } else {
+          spin++; 
+          spinner.style.transform = 'rotate(' + spin + 'deg)';
+        }
+      }
+    }
+
+    window.addEventListener("load", function () {
+      spinny();
+    });
+  </script>
 </body>
 
 </html>

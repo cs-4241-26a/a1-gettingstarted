@@ -3,26 +3,108 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 20px;
+        color: #10288C;
+      }
+
+      h2 {
+        color: #A9DADB;
+      }
+
+      p {
+        font-size: 20px;
+        color: #6338EE;
+      }
+
+      li {
+        margin: 10px;
+        color: #83B3F6;
+      }
+
+      body{
+        background-color: rgba(165, 42, 42, 0.137);
+      }
+
+      #movingText {
+        position: relative;
+        left: 0;
+      }
+
+      p {
+        margin: 10px;
+        color: #274DEA;
+      }
+      
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+
+    <header>
+      <h1 id="movingText">Information about Raghavan Rajkumar</h1>
+    </header>
+
     <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      I am a student at
+      <a href="https://www.wpi.edu/">Worcester Polytechnic Institute</a>.
     </p>
 
+    <img src="/wpi.png" alt="Worcester Polytechnic Institute" width="300">
+
+    <section>
+      <h2>About Me</h2>
+    <p>
+      Raghavan Rajkumar
+    </p>
+    <p>
+      Computer Science and Data Science
+    </p>
+    <p>
+      Software Engineering, Databases, Deep Learning, Machine Learning, Operating Systems
+    </p>
+    </section>
+
+    <section>
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>First Citizens Bank Intern - Summer 2026</li>
+      <li>HTML and CSS were used in my Software Engineering course and my Internship at First Citizens Bank</li>
     </ul>
+    </section>
+
+    <footer>
+      <p>CS4241 Assignment 1 - Raghavan Rajkumar</p>
+    </footer>
+
+    <script>
+      const movingText = document.getElementById('movingText');
+
+      let position = 0;
+      let direction = 1;
+
+      function moveText() {
+        position += direction;
+        
+        if(position >= 50 || position <= 0) {
+          direction *= -1;
+        }
+
+        movingText.style.left = position + 'px';
+
+        requestAnimationFrame(moveText);
+      }
+
+      moveText();
+    </script>
   </body>
 </html>

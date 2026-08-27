@@ -4,11 +4,86 @@
 <head>
   <title>CS4241 Assignment 1</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="stylish.css">
+  <!-- <link rel="stylesheet" type="text/css" href="stylish.css"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Grandstander">
 </head>
 
 <body>
+  <style>
+    * {
+    font-family: "Grandstander", sans-serif;
+    }
+
+    body {
+        background-image: url('Beach.jpg');
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        justify-content: center;
+        background-color: #665a48;
+        width: 80%;
+        border: 10px solid #485166;
+        border-radius: 12px;
+        margin: 30px 0px;
+        padding: 0px 20px;
+    }
+
+    .center {
+        width: 95%;
+        background-color: #30d9e6;
+        border: 10px solid #e6a94a;
+        border-radius: 12px;
+        padding: 10px 20px;
+        margin: 30px 0px;
+        
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    a {
+        color: #3066e6;
+    }
+
+    header, footer {
+        width: 80%;
+        height: 50px;
+        background-color: #3066e6;
+        border: 10px solid #485166;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    header .left, footer .left {
+        float: left;
+        height: 100%;
+    }
+
+    header .right, footer .right {
+        float: right;
+        height: 100%;
+    }
+
+    header p, footer p {
+        color: white;
+    }
+
+    #spinn {
+        float: right;
+        margin: 10px 100px;
+        transform-origin: center center;
+        font-size: larger;
+    }
+  </style>
+
   <header>
     <img class="left" src="smile.png" alt="yayay">
     <img class="right" src="smile.png" alt="yayay">

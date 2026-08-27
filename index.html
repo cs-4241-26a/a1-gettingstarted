@@ -3,26 +3,73 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Betania+Patmos+In&family=Hanalei+Fill&family=Honk:MORF@15&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Betania+Patmos+In&family=Hanalei+Fill&display=swap');
+    
+      body {
+        background-color: #F7F2CB;
+      }
+
+      h1 {
+        font-family: "Honk", system-ui;
+        font-size: 50px;
+        display: inline-block;
+        background-color: #FF8171;
+      }
+
+      h2 {
+        font-family: "Hanalei Fill", system-ui;
+        color: #7876CF;
+      }
+
+      p {
+        color: #A66EB8;
+      }
+
+      li {
+        color: #BA7FE6;
+      }
+
+      #square {
+        width: 100px;
+        height: 100px;
+        background: purple;
+        border-radius: 10px;
+
+        animation-name: disappearingSquare;
+        animation-duration: 2500ms;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes disappearingSquare {
+        from {
+          transform: translateX(0);
+          opacity: 1;
+        }
+
+        to {
+          transform: translateX(100px);
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information about Ella Brown</h1>
+    <p>Name: Ella Brown</p>
+    <p>Majors: Computer Science & Mechanical Engineering | Class of 2028</p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <p>Tech. Experience:</p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: some</li>
+      <li>CSS: some</li>
+      <li>JavaScript/TypeScript: none</li>
     </ul>
+
+    <h2>Simple Animation</h2>
+    <p>Disappearing Square:</p>
+    <div id="square"></div>
   </body>
 </html>

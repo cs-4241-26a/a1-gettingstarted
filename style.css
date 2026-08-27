@@ -4,6 +4,9 @@
 :root {
     --header-color: #000E33;
     --bg-color: #152861;
+    --title-text-color: #F0CA00;
+    --title-shadow-color: #70633C;
+    --body-color: #FFFCF0;
 }
 
 body {
@@ -21,7 +24,7 @@ header {
 }
 
 main {
-    background-color: #FFFCF0;
+    background-color: var(--body-color);
     padding: 20px;
     margin: 20px;
 }
@@ -37,8 +40,8 @@ h1 {
             "CRSV" 0.5,
             "ELSH" 0,
             "ELXP" 0;
-    color: #F0CA00;
-    text-shadow: #70633C 2px 4px 2px;
+    color: var(--title-text-color);
+    text-shadow: var(--title-shadow-color) 2px 4px 2px;
     margin: 5px;
 }
 
@@ -53,4 +56,5 @@ h2 {
             "CRSV" 0.5,
             "ELSH" 0,
             "ELXP" 0;
+    margin-bottom: 0;
 }

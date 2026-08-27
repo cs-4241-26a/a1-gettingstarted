@@ -88,7 +88,10 @@ http://a1-charlieroberts.onrender.com
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added CSS rules for the page background and typography, responsive heading size, navigation links, section borders, a responsive grid, article panels, a table, and button hover states.
+- **JavaScript animation**: Added an "Animate the star" button. JavaScript toggles a class that makes the decorative star bounce and rotate with a CSS keyframe animation.
+- **Semantic HTML**: Used `header`, `nav`, `main`, `section`, `article`, `table`, `caption`, `thead`, `tbody`, `footer`, and links to organize the page content meaningfully.
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Color palette**: Created a five-color palette inspired by coastal colors: ink `#183642`, paper `#f7f3eb`, coral `#e76f51`, gold `#f4a261`, and teal `#2a9d8f`. All five colors are used in the page CSS. The palette visual is saved as [palette.svg](palette.svg).
+- **Used the DM Sans font from Google Fonts**: DM Sans is used for the page typography.

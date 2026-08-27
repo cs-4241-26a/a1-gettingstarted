@@ -3,30 +3,91 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --ink: #183642;
+        --paper: #f7f3eb;
+        --coral: #e76f51;
+        --gold: #f4a261;
+        --teal: #2a9d8f;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.6;
+      }
+
+      header, main, footer { max-width: 900px; margin: auto; padding: 2rem; }
+      header { border-bottom: 5px solid var(--gold); }
+      nav a { color: var(--teal); font-weight: 700; margin-right: 1rem; }
+      h1, h2 { line-height: 1.1; }
+      h1 { max-width: 650px; font-size: clamp(2.4rem, 7vw, 5rem); margin: 3rem 0 1rem; }
+      h2 { color: var(--coral); margin-top: 0; }
+      section { padding: 2rem 0; border-bottom: 1px solid var(--gold); }
+      .intro { font-size: 1.2rem; max-width: 620px; }
+      .details { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+      article { padding: 1.25rem; border-left: 5px solid var(--teal); background: #fffdf8; }
+      table { width: 100%; border-collapse: collapse; background: #fffdf8; }
+      th, td { padding: .75rem; text-align: left; border-bottom: 1px solid var(--gold); }
+      th { color: var(--coral); }
+      button { border: 0; padding: .75rem 1rem; color: #fffdf8; background: var(--coral); font: inherit; font-weight: 700; cursor: pointer; }
+      button:hover { background: var(--teal); }
+      .spark { display: inline-block; color: var(--gold); }
+      .spark.animate { animation: bounce .7s ease-in-out 3; }
+      footer { color: var(--teal); }
+
+      @keyframes bounce {
+        50% { transform: translateY(-12px) rotate(8deg); }
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about Luigi Cardaropoli</h1>
-    <p>
-    Luigi Cardaropoli
-    </p>
-    <p>
-      ECE/CS Major Junior at WPI
-    </p>
-    <p>
-      I'm in SAE, Run Club, and a PLA
-    </p>
+    <header>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a></nav>
+      <h1>Information about Luigi Cardaropoli <span class="spark" aria-hidden="true">✦</span></h1>
+      <p class="intro">ECE/CS major and junior at WPI. I am involved in SAE, Run Club, and a PLA.</p>
+      <button id="animate-button" type="button">Animate the star</button>
+    </header>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript </li>
-      <li>Python</li>
-    </ul>
+    <main>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About me</h2>
+        <div class="details">
+          <article><h3>Campus life</h3><p>SAE, Run Club, and a PLA keep me busy outside the classroom.</p></article>
+          <article><h3>Interests</h3><p>I enjoy building practical tools and learning how software works.</p></article>
+        </div>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <table>
+          <caption>Work and technology experience</caption>
+          <thead><tr><th>Area</th><th>Experience</th></tr></thead>
+          <tbody>
+            <tr><td>Work</td><td>IBM/Rational and WPI</td></tr>
+            <tr><td>Technologies</td><td>HTML, CSS, JavaScript, and Python</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer><small>CS 4241 Assignment 1</small></footer>
+    <script>
+      document.querySelector('#animate-button').addEventListener('click', () => {
+        const star = document.query Selector('.spark');
+        star.classList.remove('animate');
+        void star.offsetWidth;
+        star.classList.add('animate');
+      });
+    </script>
   </body>
 </html>

@@ -1,28 +1,132 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet">
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <style>
+      * {
+        font-family: "Varela Round";
+      }
+
+      html {
+        background: #d9f9f0;
+        min-height: 100%;
+        justify-content: center;
+      }
+
+      .info {
+        color: #d9fada7a;
+        text-shadow: -1px -1px #357a65;
+        background-clip: text;
+        display: flex;
+        justify-content: center;
+        padding: 10px 25px;
+      }
+
+      h2 {
+        color: #f9d9d87e;
+        text-shadow: -1px -1px #7a3735;
+      }
+
+      body {
+        color: #7a3735;
+      }
+
+      .container-1,
+      .container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 45px 25px 45px;
+        padding: 10px 25px;
+        font-size: 18px;
+        border-radius: 15px;
+        outline: 1px solid #d9fada;
+        box-shadow: 3px 3px 8px #357a65;
+        background: #ffffff;
+        overflow: hidden;
+      }
+    </style>
+
+    <title>CS4241 Assignment 1</title>
+  </head>
+
+  <body>
+    <div class="info">
+      <h1>Information about Evelyn</h1>
+    </div>
+    <div class="container-1">
+      <article>
+        <h2>Evelyn Yee</h2>
+
+        <p>Class of 2027</p>
+
+        <p>Major: Computer Science</p>
+
+        <p>Minor: Data Science</p>
+
+        <p>
+          <u>Previous Computer Science Courses</u>
+        </p>
+        <ul>
+          <li>Systems Programming Concepts</li>
+          <li>Discrete Mathematics</li>
+          <li>Operating Systems</li>
+          <li>Software Engineering</li>
+          <li>Database Systems</li>
+          <li>Human-Computer Interaction</li>
+          <li>Object Oriented Analysis and Design</li>
+        </ul>
+      </article>
+
+      <div>
+        <img src="images/strawberry.png" alt="MyMelody holding a strawberry">
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div>
+        <img src="images/spoon.png" alt="MyMelody on a spoon">
+      </div>
+
+      <article>
+        <h2>Experience</h2>
+        <p>
+          <u>Working experience</u>
+        </p>
+        <ul>
+          <li>N/A</li>
+        </ul>
+        <p>
+          <u>Experience with technologies and methods</u>
+        </p>
+        <ul>
+          <li>
+            None
+            <ul>
+              <li>N/A</li>
+            </ul>
+          </li>
+
+          <li>
+            Some
+            <ul>
+              <li>JavaScript/Typescript</li>
+            </ul>
+          </li>
+
+          <li>
+            A lot
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </div>
   </body>
 </html>

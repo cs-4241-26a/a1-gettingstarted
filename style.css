@@ -1,0 +1,31 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #B7B8FE;
+  color: #47554E;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #195FA9;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+nav a {
+  color: #DA0A0B;
+  margin: 0 10px;
+}
+
+table {
+  margin: 0 auto;
+  border: 2px solid #35570E;
+  background-color: white;
+}
+
+td {
+  padding: 5px 15px;
+}

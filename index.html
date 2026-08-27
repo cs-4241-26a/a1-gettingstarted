@@ -3,20 +3,70 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      body {
+        background-color: #FCF7CD;
+        text-align: center;
+      }
+      h1 {
+        color: #133770;
+        font-family: AppleGothic, sans-serif;
+      }
+      h2 {
+        color: #3C6998;
+        font-family: AppleGothic, sans-serif;
+      }
+      p {
+        color: #F4A848;
+        font-family: Chalkboard, sans-serif;
+      }
+      ul {
+        display: inline-block;
+        text-align: left;
+      }
+      li {
+        color: #9BCFF0;
+        font-family: Chalkboard, sans-serif;
+      }
+      #animation {
+        display: inline-block;
+        color: #133770;
+        animation: float 2s infinite alternate ease-in-out;
+      }
+      @keyframes float {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-30px);
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about Norah Anderson</h1>
+    <h1>Information about </h1>
+    <div id="animation">
+      <h1 style="font-family: Chalkboard, sans-serif">Norah!</h1>
+    </div>
     <p>
       I am a junior (class of 2028) pursuing a BS/MS in Computer Science.
     </p>
     <p>
       Outside of classes I enjoy going to the gym, spending time with friends, and traveling!
     </p>
+`
+    <br/>
+    <br/>
 
     <h2>Experience</h2>
     <ul>
       <li>I have basic experience with HTML and CSS from high school.</li>
       <li>I have basic experience with TypeScript (and HTML & CSS) from Software Engineering @ WPI.</li>
     </ul>
+
+    <br/><br/><br/><br/>
+
+    <img src="/adobe-color-theme-a1.png" alt="Color Theme" style="width: 30%; max-width: 1000px;"/>
+
   </body>
 </html>

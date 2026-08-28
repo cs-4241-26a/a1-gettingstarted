@@ -3,9 +3,8 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 
 
 Josue Hernandez
-[http://a1-charlieroberts.onrender.com](https://a1-josuehernandez.onrender.com)
+(https://a1-josuehernandez.onrender.com)
 
-This project shows ...
 
 ## Technical Achievements
 * Style using CSS. (3)

@@ -4,7 +4,7 @@ https://a1-lexmoulton.onrender.com
 
 ## Technical Achievements
 
-- **Styled page with CSS**: Added rules for `body` backroun0d, color, font, `h1` mauve
+- **Styled page with CSS**: Added rules for `body` backround, color, font, `h1` mauve
   heading, `h2` olive headings, `section` background, padding, and `a` sage
   links.
 - **Semantic HTML tags**: `<header>` name, summary, `<main>` page content,

@@ -1,0 +1,47 @@
+body {
+    background-image: url("https://i.pinimg.com/736x/7a/27/21/7a27218a81f51c3cc5f8001efb351890.jpg");
+    text-align: center
+}
+
+h1 {
+    background-color: rgba(255, 247, 222, 0.747);
+    color: #9F5773;
+    font-family: Rubik;
+    font-size: 200%;
+    text-align: center
+}
+
+h2 {
+    background-color: rgba(255, 247, 222, 0.647);
+    color: #9F5773;
+    font-family: Rubik;
+    font-size: 150%;
+    text-align: center
+}
+
+p {
+    color: #634d3b;
+    font-family: Inconsolata;
+    font-size: 100%;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+ul {
+    color: #634d3b;
+    font-family: Inconsolata;
+    font-size: 100%;
+    text-align: left;
+}
+
+/* unvisited link */
+a:link {
+    color: #5d686c;
+    font-family: Inconsolata;
+}
+
+/* visited link */
+a:visited {
+    color: #454653;
+    font-family: Inconsolata;
+}

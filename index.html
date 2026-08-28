@@ -3,26 +3,56 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap');
+    </style>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body style="background-color: #9AACB3; font-family: Caacupe One; font-size: larger;">
+    
+    
+    <h1 style= "color: #596569">Information about Isaiah R. Balthazar</h1>
     <p>
-    Charlie Roberts
+    Isaiah Balthazar
     </p>
     <p>
-      [Major and other information]
+      Computer Science w/ Concentration in Cybersecurity. Class of 2028
     </p>
-    <p>
-      [Other things]
-    </p>
+    <h3 style="color: #F5F9F9">CS classes I have taken at WPI</h3>
+    <ol style="color: #F5F9F9">
+      <li>Intro to Programming</li>
+      <li>OOP</li>
+      <li>Systems Programming</li>
+      <li>Computer Networks</li>
+      <li>Machine Org</li>
+      <li>Operating Systems</li>
+      <li>Intro to Security</li>
+      <li>Soft Eng</li>
+    </ol>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <h2 style="color: #A4C3D7">Experience</h2>
+    
+    <ul style = "color: #625C5B">
+      <li>HTML: some</li>
+      <li>CSS: some</li>
+      <li>JavaScript/Typescript: some</li>
     </ul>
+    
+    
+    <script>
+      const textSpin = [
+        {transform: "rotate(360deg) scale(1)"},
+      ];
+      const spinTime = {
+        duration: 1000,
+        iterations:1,
+      };
+      
+      const text = document.body;
+      text.addEventListener("click", () => {
+        text.animate(textSpin, spinTime);
+      });
+    </script>
+      
   </body>
 </html>

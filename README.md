@@ -1,94 +1,47 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
-===
+Samura Poncet 
+https://a1-samuraponcet.onrender.com/2page.html
 
-*DUE: Friday, August28, 2025 by 1:59 PM*
+This project show an initial page with a welcome message taking the user to a new page called "about me" describing my name, my class, my previous class and experiences with HTML, CSS and JavaScript / Typescript. From my   "about me" the user can access my "hobbies page" where they can learn about my hobbies. 
+First page "CS4241 Assignment 1": 
+In this page I created .container in order to vertically and horizontally center the text. display: grid; activates the CSS grid layout. 
+place-items: center;  sits the elements inside the container exactly in the middle. 
+height: 100vh; set the height of the container to 100% viewpoint. 
+Inside the body I set up a backgroud color to  #555934, a border with size 10px and with a border style double. 
+I used <div> to create a section for my welcome message, where use the font "Bondoni MT", changed the font colot to  #F2E6D8 and set the font-size to 50px. 
+I created flex box layout for my cat-area button: 
+flex-direction: row; place my cat-area horizontally, 
+align-items: center; items vertically, 
+and gap-add: 30px;  the space between my items.
+I used another <div> to create a section to give the user instructions on how to get to the next page, where use the font "Bondoni MT", changed the font colot to  #F2E6D8 and set the font-size to 40px. 
+Lastly I created a cat-button, user can click to get to the next page. I changed the background, border, and outline to none so my image can bland with my initial backgroud color. I changed the cursor to a pointer and removed extra space inside the button by settig padding:0; 
+Inside my button class, I use href to link to my second page and set the img that should be clicked. 
 
-First assignment! You will deploy the starting Web site that you will use this term to [Render](https://www.render.com/). 
+Second page "About Me": 
+I set the format for the body by setting the backgroud-color: background-color: #F2E6D8 font-family: 'Bodoni MT'; color: #555934; border: 10px double #593E2E ;
+The .about: adds 15px of space iside the element, between the contents and its edges. and text-align: left; makes the text align to the left. 
+The .title: set the font-size to the title to 50px. 
+The .info: sent the font size for my general info to 15px. 
+I created an animation by using .fade:
+opacity: 0; makes elements invisible at first 
+animation: fadeIN 1s forwards; elements play animation called fadeIN in 1 second and keeps the elements final state of the animation when. it finishes
+text-align: center; center the text horizontally.
+Then I sent the time for each animation by using .delay-1:  animation-delay: 1s; using a different name and time for each delay animation. 
+Then i used @keyframes fadeIN, to create the animation called fadeIn, and i defined the opacities from start to finishing. 
+Inside the body I set up my general information including Name, Major, class, minor. I bolded items like name, major, minor, previous class. while leaving the information unbolded. I used the class 'about info' to make sure the text are align coreclty and the text size are correct. 
+To add my information such ass previous class and experience, I use an  2 side unordered table in order to not make the page shorter and not have too much empty space on the right of the page.
+I matched the timing of the items in the first page of the table with the timing of the items in the second pade. 
+Lastly I recreated my cat button to take the user to my last page
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Render, as well as experiment some with HTML/CSS/JS.
-
-**AI POLICY REMINDER:** You must adhere to the AI policy described in the course syllabus, including citations of any AI tools you used and how you used them.
-
-Assignment details
----
-
-This assignment requires that your website is both contained in a GitHub repository and hosted in Render.
-
-### Clone to computer, push to Github, import to Render (recommended)
-
-1. Fork the starting assignment code in GitHub. This repo contains the following:
-    * The server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Render
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2025) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * JavaScript / Typescript
-3. Complete some technical and/or design achievements (see below).
-4. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory and then going to `localhost:3000` in your browser.
-5. Modify the README file according to the specification below.
-6. Commit and push all your changes to GitHub. 
-7. Deploy your project to Render. You can do this by [importing the repo from GitHub](https://render.com/docs/github).
-    * You will need to create an Render account first.
-    * Under "Publish Directory", you can just put "./" (without the quotation marks).
-8. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo. This helps us find your project.
-	* Ignore any messages about conflicts. You do not need to resolve them.
-	* Make the title of your pull request "Pull Request for NAME" (ex. "Pull Request for Charlie Roberts")
-
-### Note about alternative hosting
-Our use of Render in this class is there as a convenience for you. However, if you are already familiar with hosting through other services--or if you would like to self-host--that's perfectly fine so long as the website in question meets all of the assignment requirements. Note that we will not be able to help you if you run into issues on other hosting platforms, and you will be responsible for making sure the website stays up and running for the duration of the term. For A1, you will also still need to create a pull request with your name and your website's URL.
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-The name scheme should be `a1-yourFirstAndLastName`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future assignments.
-
-Rubric
----
-For the Technical and Design achievements, make sure you thoroughly describe in your README what you did why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM. Remember that the success of Achievements hinges on how well you describe them in your README. Well formatted text, images, and concise and clear descriptions are helpful. You must include a Technical Achievements and Design Achievements section, even if none are attempted.
-
-Note that if you want to load resources besides your index.html file (images, an CSS file, a JS file) you'll need to modify server.js to point to these. For now it's easiest to just hardcode paths to the resources, but we'll look at ways to optimize this shortly.
-
-*Basic Requirements*
-Note the highest grade you can receive is a 100%.  
-
-1. Assignment has proper naming scheme (10 points)
-2. Files forked from original repo (10 points)
-3. `index.html` properly rendered, no obvious visual errors / extraneous characters (15 points)
-4. `index.html` page properly edited (contains doctype, charset, and validates at https://validator.w3.org/, 10 points)
-5. All changes pushed to GitHub (10 points)
-6. Project deployed to Render (or other hosting option, 15 points)
-7. Pull Request submitted to original repo (15 points)
-
-*Technical Achievements*
-1. (5 points) Style your page using CSS. Each style rule you apply will get you 1 point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.). Each extra tag you use will get you 1 point for a maximum of 5 points. Be sure to describe the tags you use in your README.
-
-*Design Achievements*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.onrender.com
-
-This project shows ...
-
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
-## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+Third page "Hobbies":
+I set the format for the body by setting the backgroud-color: background-color:#BF9B7A font-family: 'Bodoni MT'; color: #593E2E; border: 10px double #F2E6D8 ;
+The .about: adds 15px of space iside the element, between the contents and its edges. and text-align: left; makes the text align to the left. 
+The .title: set the font-size to the title to 50px. 
+The .info: sent the font size for my general info to 15px. 
+I created an animation by using .fade:
+I created an animation by using .fade:
+opacity: 0; makes elements invisible at first 
+animation: fadeIN 1s forwards; elements play animation called fadeIN in 1 second and keeps the elements final state of the animation when. it finishes
+text-align: center; center the text horizontally.
+Then I sent the time for each animation by using .delay-1:  animation-delay: 1s; using a different name and time for each delay animation. 
+Then i used @keyframes fadeIN, to create the animation called fadeIn, and i defined the opacities from start to finishing. 
+Then to add the images to my hobbies i created an unordered list table and had the images aside of each of the different hobies. 

@@ -1,28 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <head> 
+        <title>CS4241 Assignment 1</title>
+        <meta charset="utf-8">
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
-</html>
+        <style>
+          .container {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+      }
+      .cat-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+      }
+      .cat-button{
+        background:none ;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      </style>
+    </head>
+        <body style="background-color: #555934; border: 10px double #BF9B7A;">
+          <div class="container">
+
+      <div style="color: #F2E6D8; font-family: 'Bondoni MT'; font-size: 50px;"> 
+        Hello, welcome!
+        </div>
+          <div class="cat-area"; style="color: #F2E6D8; font-family: 'Bondoni MT'; font-size: 40PX;">
+            Click the cat to learn more!
+      </div>
+  
+        <button class="cat-button">
+          <a href="2page.html">
+            <img src="realcat.png" width="300">
+            </a>
+          </button>
+</div>
+    </body>
+    </html>

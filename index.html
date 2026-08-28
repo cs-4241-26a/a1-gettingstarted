@@ -6,21 +6,51 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+  <script>
+    const maxPulse = 5;
+    const basePadding = 10
+    async function pulse(){
+      for (let i = 0; i < (1+(maxPulse)*2); i++) {
+        if (i < (maxPulse)){
+          document.getElementById("pulse").style.padding = basePadding+i+"px";
+          console.log(basePadding+i+"px");
+        }else{
+          document.getElementById("pulse").style.padding = basePadding+(maxPulse)-(i-maxPulse)+"px";
+          console.log(basePadding+(maxPulse)-(i-maxPulse)+"px");
+        }
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+    }
+
+    window.onload = () => {
+      pulse();
+    }
+  </script>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+      </ul>
+    </nav>
     <h1>Information about Wen Chen 2028</h1>
-    <p>
+    <p class="introduction" id="pulse">
       I'm a guy who loves sometimes taking a break from everything and having a nice homecooked lunch or going for a short walk.
+      <a href="https://www.youtube.com/@TastingHistory">Most favorite Channel For Cooking</a>
     </p>
+    <h2>Made Chicken and Broccoli</h2>
+    <img src="images/stirfry.jpg" alt="Chicken and Broccoli in a glass bowl">
     <p>
-      CS major
+      Major: CS major
     </p>
-    <h3>Other Classes Taken:</h3>
+    <h2>Other Classes Taken:</h2>
     <ul>
       <li>CS 3733</li>
       <li>CS 3431</li>
       <li>CS 4341</li>
     </ul>
     <p>
-      Addicted to light novels and web novels chat to me about them I have almost read every isekai LOL
+      Addicted to light novels and web novels chat to me about them. I have almost read every isekai novel (My friends say I have a problem).
     </p>
     <h2>Experience</h2>
     <ul>
@@ -30,12 +60,12 @@
       <li>PrismaORM</li>
       <li>Express JS</li>
     </ul>
-    <p>
+    <h2>
       Working experience
-    </p>
+    </h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Web Developer</li>
     </ul>
+    <footer>This is a website for WebWare at WPI</footer>
   </body>
 </html>

@@ -10,6 +10,19 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+
+    case '/style.css':
+      sendFile( response, 'style.css' )
+      break
+
+    case "/fonts/AlegreyaSansSC-Light.ttf":
+      sendFile(
+        response,
+        "fonts/AlegreyaSansSC-Light.ttf",
+        "font/ttf"
+      );
+      break;
+
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -21,4 +34,4 @@ const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
      response.end( content, 'utf-8' )
    })
-}
+};

@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: #2700FF;
+    background-color: #00D819;
+}
+
+.p1 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.experience-columns {
+  display: flex;
+}
+
+.work-experience {
+    flex: 0.5;
+    text-align: center;
+}
+
+.school-experience {
+    flex: 0.5;
+    text-align: center;
+}
+
+.experience_header {
+    margin-top: 0px;
+}
+
+.dropdown table {
+  border-collapse: collapse;
+  margin: 8px auto 0;
+}
+
+.dropdown th, .dropdown td {
+  border: 1px solid black;
+  padding: 4px 10px;
+}
+
+.dropdown td, .dropdown th {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.dropdown summary {
+  cursor: pointer;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f2F2F2;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #8CAFFF;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

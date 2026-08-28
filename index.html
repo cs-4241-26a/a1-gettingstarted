@@ -1,53 +1,78 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="myStyle.css">
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
+  
   <body>
-    <h1>Information about Hung Dao</h1>
-    <p>
-      Hi! My name is Hung Dao. 
-      I am a student at Worcester Polytechnic Institute and I am in class of 2027
-    </p>
-    <p>
-      I am currently pursuing a major in both Computer Science and Interactive Media and Game Development.
-      My previous CS courses:
-      <ul>
-        <li>CS 1101: Introduction to Program Design</li>
-        <li>CS 2011: Introduction to Machine Organization and Assembly language</li>
-        <li>CS 2102: Object-Oriented Design Concepts</li>
-        <li>CS 2223: Algorithms</li>
-        <li>CS 2303: Systems Programming Concepts</li>
-        <li>CS 3013: Operating Systems</li>
-        <li>CS 3133: Foundations of Computer Science</li>
-        <li>CS 3516: Computer Networks</li>
-        <li>CS 3733: Software Engineering</li>
-        <li>CS 411X: Multiplayer Network Games</li>
-        <li>CS 4341: Introduction to Artificial Intelligence</li>
-        <li>CS 4731: Computer Graphics</li>
-        <li>CS 4732: Computer Animations</li>
-      </ul>
-    </p>
-    <p>
-      I have some experience in HTML, CSS, and JavaScript, none for Typescript.
-    </p>
-    <p>
-      In my free time, I enjoy playing video games, listening to music, reading manga, and watching soccer.
-      My favorite Pokemon is Corviknight. (Click it!)
-    </p>
-    <img id="corviknight" src="https://img.pokemondb.net/artwork/large/corviknight.jpg" alt="Corviknight" width="200">
+    <header>
+      <h1>Information about Hung Dao</h1>
+    </header>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>DigiStudio</li>
-      <li>BHSoft</li>
-      <li>WPI</li>
-    </ul>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        Hi! My name is Hung Dao. 
+        I am a student at Worcester Polytechnic Institute and I am in class of 2027
+      </p>
+      <p>
+        I am currently pursuing a major in both Computer Science and Interactive Media and Game Development.
+        My previous CS courses:
+        <ul>
+          <li>CS 1101: Introduction to Program Design</li>
+          <li>CS 2011: Introduction to Machine Organization and Assembly language</li>
+          <li>CS 2102: Object-Oriented Design Concepts</li>
+          <li>CS 2223: Algorithms</li>
+          <li>CS 2303: Systems Programming Concepts</li>
+          <li>CS 3013: Operating Systems</li>
+          <li>CS 3133: Foundations of Computer Science</li>
+          <li>CS 3516: Computer Networks</li>
+          <li>CS 3733: Software Engineering</li>
+          <li>CS 411X: Multiplayer Network Games</li>
+          <li>CS 4341: Introduction to Artificial Intelligence</li>
+          <li>CS 4731: Computer Graphics</li>
+          <li>CS 4732: Computer Animations</li>
+        </ul>
+      </p>
+      <p>
+        I have some experience in HTML, CSS, and JavaScript, none for Typescript.
+      </p>
+      <p>
+        In my free time, I enjoy playing video games, listening to music, reading manga, and watching soccer.
+      </p>
+      <figure>
+        <img id="corviknight" src="https://img.pokemondb.net/artwork/large/corviknight.jpg" alt="Corviknight" width="200">
+        <figcaption>My favorite Pokémon — click to spin!</figcaption>
+      </figure>
+
+      <p>
+        Find me here:
+        <a href="https://github.com/HungBDao" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Organization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>DigiStudio</td></tr>
+          <tr><td>BHSoft</td></tr>
+          <tr><td>WPI</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>2026 Hung Dao</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>

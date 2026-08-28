@@ -1,0 +1,157 @@
+:root {
+    --color-bg: #231C2A;
+    --color-surface: #423861;
+    --color-purple: #726AFF;
+    --color-gold: #FFB262;
+    --color-text: #F8C9A5;
+}
+
+.page {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin-left: 2rem;
+    padding-bottom: 4rem;
+}
+
+body {
+    font-family: 'Asimovian', sans-serif;
+}
+
+h1 {
+    color: var(--color-purple);
+    background-color: var(--color-surface);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+h2 {
+    color: var(--color-gold);
+    background-color: var(--color-surface);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+a {
+    color: var(--color-purple);
+}
+
+a:hover {
+    color: var(--color-gold);
+}
+
+.glow-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 3px solid var(--color-gold);
+    pointer-events: none;
+    z-index: 999;
+    animation: glow-pulse 4s ease-in-out infinite;
+    will-change: transform;
+}
+
+@keyframes glow-pulse {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 8px var(--color-purple)) drop-shadow(0 0 14px var(--color-gold));
+        opacity: 0.75;
+    }
+
+    50% {
+        filter: drop-shadow(0 0 16px var(--color-purple)) drop-shadow(0 0 28px var(--color-gold));
+        opacity: 1;
+    }
+}
+
+.skills-table {
+    border-collapse: collapse;
+    background-color: var(--color-surface);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin: 1rem 0 1.5rem;
+}
+
+.skills-table caption {
+    caption-side: top;
+    text-align: left;
+    color: var(--color-gold);
+    font-size: 1.1rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 0.4rem 1.2rem;
+    text-align: left;
+}
+
+.skills-table thead th {
+    color: var(--color-bg);
+    background-color: var(--color-gold);
+}
+
+.skills-table tbody th {
+    color: var(--color-purple);
+    font-weight: bold;
+}
+
+.skills-table tbody tr:nth-child(even) {
+    background-color: rgba(114, 106, 255, 0.15);
+}
+
+.stars {
+    color: var(--color-gold);
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
+    text-shadow: 0 0 6px var(--color-gold);
+}
+
+.ticker {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-surface);
+    border-top: 2px solid var(--color-gold);
+    overflow: hidden;
+    padding: 0.6rem 0;
+    box-sizing: border-box;
+}
+
+.ticker-track {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    color: var(--color-gold);
+    padding-left: 100%;
+    animation: ticker-scroll 16s linear infinite;
+}
+
+.ticker-content a {
+    color: var(--color-purple);
+    font-weight: bold;
+}
+
+.ticker-content a:hover {
+    color: var(--color-gold);
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,93 @@
+body {
+    background: #9FDBDE;
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+#main {
+    /* height: 100vh; */
+    outline: 5px solid #3C98BD;
+    width: min(1000px, 100%);
+    background: #fbfbfb;
+    margin: 20px;
+    box-shadow: 0 0px 10px 3px #000000;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.panel {
+    padding: 10px;
+}
+
+#cn {
+    /* color: #3C98BD; */
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+
+h1 {
+    background-color: #045F72;
+    color: #ffffff;
+    padding: 8px;
+    margin: 0px;
+}
+
+footer {
+    background-color: #549096;
+    min-height: 10rem;
+    p {
+        padding: 1rem;
+    }
+}
+
+tr:nth-child(even) {
+  background-color: #DFf8fc;
+}
+
+#nyan {
+    max-width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper-fix {
+    overflow: hidden;
+}
+
+#ball {
+    width: 150px;
+}
+
+/* 
+the css below is sourced from wikipedia because the html <marquee> tag 
+wouldnt pass the validator because its technically not part of html anymore 
+even though literally everything still supports it >:C so i need this to retain
+the same functionality but with CSS instead of native html grrrrrrrrrrrr >:CCC
+*/
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-content {
+    display: inline-block;
+}

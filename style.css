@@ -1,0 +1,151 @@
+/*
+primary orange accent: #ff9600
+lighter orange accent: #ffae3c
+pale orange background color: #faf0e4
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 2.4vw;
+    background-color: #4C5357;
+}
+
+@media all and (min-width:900px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width:670px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 650px;
+    position: relative;
+    z-index: -10000;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* corrects safari rendering */
+    color: #D6B15A;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding: 0.7rem 0 0.1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.04rem solid #D68D5A;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-feature-settings: 'case' 1;
+    letter-spacing: 0.8px;
+
+    border: none; /* reset any other header borders */
+    margin-right: 40%;
+    margin-bottom: 0.4rem;
+    padding-top: 0.16rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.9em;
+    margin-top: 1rem;
+}
+
+section {
+    margin-top: 1.3rem;
+}
+
+h1 + section {
+    margin-top: 0;
+}
+
+section h2 {
+    border-top: 0.03rem solid #D68D5A;
+}
+
+h1 + section h2 {
+    border: none;
+}
+
+p {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+a {
+    color: inherit;
+    text-underline-offset: 0.12em;
+    text-decoration-skip-ink: all;
+    text-decoration: underline #D68D5A 0.035em;
+    transition-property: background;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    transition-property: background;
+    transition-duration: 0.2s;
+    background-color: #57544C;
+    border-radius: 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-style: normal;
+    margin-bottom: 0.5rem;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    background-color: #5AA7D7;
+    display: flex;
+    justify-content: center;
+    color: #57544C;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100dvw;
+    background-color: #57544C;
+    display: flex;
+    justify-content: center;
+    color: #D68D5A;
+}
+
+tr th {
+    font-weight: normal;
+    padding-right: 1.5rem;
+    border-right: 0.03rem solid #D68D5A;
+    vertical-align: top;
+}
+
+tr td {
+    padding-left: 1.5rem;
+    padding-bottom: 0.3rem;
+}

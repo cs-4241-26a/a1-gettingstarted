@@ -88,7 +88,26 @@ http://a1-charlieroberts.onrender.com
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+CSS Styling:
+- Centered Items
+- font size
+- font style
+- table collapse separate
+- background color
+
+HTML Semantic Tags
+- table
+- header
+- footer
+- image
+- unordered list
+
 
 ## Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+Color Pallette
+![colorPallette.png](colorPallette.png)
+
+Fonts
+- kablamo
+- betania patmos
+- short stack

@@ -1,5 +1,12 @@
 body {
  background-color: #EFE0BF;
+ font-family: "Betania Patmos", cursive;
+ font-weight: 400;
+ font-style: normal;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ flex-direction: column;
  
 }
 
@@ -13,6 +20,70 @@ h2 {
 
 }
 
-p, ul{
+
+
+p{
+ color:#5E5E3C;
+ text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto 25px;
+  border: 1px solid #A87D5B;
+  border-radius: 8px;
+  border-spacing: 0;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+
+th,
+td {
+  padding:10px;
+  text-align: center;
+
+}
+
+th {
+  background-color: #D97652;
+  color: #FFFFFF;
+  
+}
+
+td{
  color:#5E5E3C;
 }
+
+tr:nth-child(even) td {
+  background-color:#D5B795 ;
+}
+
+
+
+.familiar {
+  background-color: yellow;
+ 
+}
+
+.most-familiar {
+  background-color: #6BAA75;
+  
+}
+
+span{
+ color:#D5B795;
+}
+
+section{
+ width: 100%;
+ text-align: center;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 2px solid #A87D5B;
+  margin: 30px 0;
+}
+
+

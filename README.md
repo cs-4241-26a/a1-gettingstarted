@@ -21,7 +21,7 @@ This assignment requires that your website is both contained in a GitHub reposit
     * A starting `index.html` file that you will edit as described below
     * A package.json file that helps configure Render
     * This README
-2. Edit `index.html` to show the following information about you:
+2. Edit `index.html` to show the following information about you: (DONE)
     * your name and class at WPI (e.g. class of 2025) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
     * your major(s) and minor(s)
     * previous computer science courses that you have taken at WPI
@@ -29,7 +29,14 @@ This assignment requires that your website is both contained in a GitHub reposit
         * HTML
         * CSS
         * JavaScript / Typescript
-3. Complete some technical and/or design achievements (see below).
+3. Completed some technical and/or design achievements (see below).
+    * Style your page using CSS. (3)
+        * body,image, unordered list, 2 more need
+    * Experiment with other *semantic* HTML tags (1)
+        * Images
+    * Create a color palette using [color.adobe.com](https://color.adobe.com).(10)
+    * Use a font from [Google Fonts](https://fonts.google.com) in your website.(5)
+
 4. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory and then going to `localhost:3000` in your browser.
 5. Modify the README file according to the specification below.
 6. Commit and push all your changes to GitHub. 

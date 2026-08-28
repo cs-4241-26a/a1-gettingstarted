@@ -2,23 +2,23 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added many CSS rules for body, main, center, panel, cn, h1, footer, table and images
-    - body -> font styling and selection, background color, margin and padding changes
-    - main -> outline, dynamic-ish width, background color, margin adjustment, box shadow
+    - body -> font styling and selection (chiron round, 400 normal), background color, margin and padding removed
+    - main -> 5px outline added, clamped maximum width to min of 1000px or 100% , background color added, margin adjustment, added box shadow under div
     - center -> flex box, div centered
     - panel -> padding adjustment
     - cn -> size adjustment, margin and/or padding adjustment
-    - h1 -> background color, text color, padding and margin adjusments
-    - footer -> background color, height minimum
-    - table -> add table row coloring
+    - h1 -> added background color, text color changed to white, padding and margin adjusments
+    - footer -> added background color, minimum height 
+    - table -> add table row coloring (even rows colored)
     - images -> adjust margins and/or padding, width limit
 - **Animations with Javascript**: Created simple animation for a beach ball to always rotate towards mouse pointer
-- **Used many semantic html tags**: Used tags such as Table, Ruby (ruby characters), images, footer and also a single link.
+- **Used many semantic html tags**: Used tags such as Table, Ruby (ruby characters), images, footer and a link.
 
 ## Design Achievements
 - **Used the Chiron Round Font from Google Fonts**: I used Chiron Round as the font for the primary copy text in my site.
 - **Website color themed with Adobe color pallet creator**: All 5 colors from the website implemented
 (see theme_color_pallet.png file)
-Color X used in....
+Color n used in....
     - #1 -> table rows
     - #2 -> site background
     - #3 -> site footer background

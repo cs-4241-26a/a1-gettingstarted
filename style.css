@@ -70,6 +70,8 @@ the css below is sourced from wikipedia because the html <marquee> tag
 wouldnt pass the validator because its technically not part of html anymore 
 even though literally everything still supports it >:C so i need this to retain
 the same functionality but with CSS instead of native html grrrrrrrrrrrr >:CCC
+
+not to mention this didnt even work out of the box so i had to fix it anyways
 */
 
 @keyframes marquee {

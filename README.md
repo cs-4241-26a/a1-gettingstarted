@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Render
 
 Avikshit Pal
-(No use of Render, just run node server.js)
+https://a1-avikshitpal.onrender.com/
 
 This project shows my personal information page for CS - 4241 Assignment 1, showing my background, coursework, and experience with web technologies
 

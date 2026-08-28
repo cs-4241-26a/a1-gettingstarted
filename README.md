@@ -10,5 +10,5 @@ This project shows ...
 - **Custom classes with CSS**: Added a custom class for formatting long list to appear side-by-side.
 
 ## Design Achievements
-- **Used the Lucida Console from W3 Fonts**: I used Lucida Console as the font for the primary copy text in my site.
+- **Used the Lucida Console from Google Fonts**: I used Cascadia Code as the font for the primary copy text in my site.
 - **Color Palette**: Created a color palette with Adobe with 5 distinct colors. Color wheel is located in my repository on GitHub.

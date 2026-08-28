@@ -3,6 +3,14 @@ const http = require('http'),
       port = 3000
 
 const server = http.createServer((request, response) => {
+  if (request.url === '/styles.css') {
+    response.writeHead(200, {
+      'Content-Type': 'text/css'
+    })
+
+    fs.createReadStream('styles.css').pipe(response)
+    return
+  }
   let path = request.url.substring(1)
 
   if (path === '') {

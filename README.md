@@ -13,3 +13,6 @@ I created a custom color palette using adobe's palette creator
 I placed the main content inside a centered container with padding and rounded corners. I also styled the headings with white text, dark-purple backgrounds, spacing, and rounded rectangles. 
 
 I styled the table with rounded corners, custom row colors, borders, and a hover effect. When the user moves the cursor over a row, its background changes color. This required removing conflicting CSS rules so that the individual row colors would display correctly.
+
+AI Citations:
+I Used ChatGPT to assist with finding css animations to add to my website

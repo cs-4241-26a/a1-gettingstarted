@@ -27,10 +27,13 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
-   if( filename === 'style.css' ) {
-     response.setHeader( 'Content-Type', 'text/css' )
-   }
-   fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
-   })
+  if( filename === 'style.css' ) {
+    response.setHeader( 'Content-Type', 'text/css' )
+  }
+  if( filename === 'image.png' ) {
+    response.setHeader( 'Content-Type', 'image/png' )
+  }
+  fs.readFile( filename, function( err, content ) {
+    response.end( content, 'utf-8' )
+  })
 }

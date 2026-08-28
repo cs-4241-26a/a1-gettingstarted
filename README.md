@@ -13,11 +13,11 @@ Style Changes:
 Added a Java script animation so experiences fade in when opening the dropdown
 
 HTML Tags:
-"<Details>"
-"<Summary>"
-"<Table>"
-"<IMG>"
-"<Footer>"
+Details
+Summary
+Table
+IMG
+Footer
 
 Design Achivements: 
 Added Color palette 

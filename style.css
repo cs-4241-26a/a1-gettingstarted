@@ -1,0 +1,95 @@
+:root {
+  --black: #000000;
+  --dark-purple: #2a0048;
+  --purple: #560072;
+  --light-purple: #800080;
+  --pink: #A90072;
+  --light-pink: #D50048;
+  --red: #ff0000;
+}
+
+@font-face {
+  font-family: "AlegreyaSansSC-Light";
+  src: url("./fonts/AlegreyaSansSC-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--purple);
+  color: var(--pink);
+  font-family: "AlegreyaSansSC-Light", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  font-family: "AlegreyaSansSC-Light", Arial, sans-serif;
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--black);
+  border-radius: 12px;
+}
+
+footer {
+  font-family: "AlegreyaSansSC-Light", Arial, sans-serif;
+  text-align: left;
+  padding: 20px;
+  background-color: var(--light-pink);
+  color: var(--black);
+  font-size: 0.9em;
+}
+
+h1 {
+  font-family: "AlegreyaSansSC-Light", Arial, sans-serif;
+  color: white;
+  background-color: var(--dark-purple);
+  padding: 15px 10px;
+  border-radius: 12px;
+}
+
+h2 {
+  font-family: "AlegreyaSansSC-Light", Arial, sans-serif;
+  color: white;
+  background-color: var(--dark-purple);
+  padding: 15px 10px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--light-purple);
+}
+
+th {
+  background-color: var(--dark-purple);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:hover {
+  background-color: var(--red);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}

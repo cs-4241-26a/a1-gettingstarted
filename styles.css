@@ -1,0 +1,53 @@
+body {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #D7C0A2;
+  background-color: #2C3A42;
+}
+
+h1 {
+  border: 1px solid #8DD5FF;
+  color: #D7C0A2;
+  background-color: #376682;
+  text-align: center;
+}
+
+/* Duplicate of h1 at the moment, kept seperate in case styles need to diverge */
+h2 {
+  border: 1px solid #8DD5FF;
+  color: #D7C0A2;
+  background-color: #376682;
+  text-align: center;
+}
+
+footer {
+  border: 1px solid #8DD5FF;
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  footer p {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+a {
+  color: #826237;
+  text-decoration: none;
+} 
+
+img {
+  width: 50%;
+  height: auto;
+  justify-content: left;
+}

@@ -1,28 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <link href="styles.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Information about Owen Nguyen</h1>
+  <p>
+    Owen Nguyen - Class of 2028 at Worcester Polytechnic Institute (WPI)
+  </p>
+  <p>
+    CS <abbr title="Bachelor of Science & Master of Science 4 Year Combined Program">BS/MS</abbr>
+  </p>
+  <h2>
+    Previous CS Courses
+  </h2>
+  <ul>
+    <li>[CS1102] Accelerated Introduction to Program Design</li>
+    <li>[CS2103] Accelerated Object Oriented Programming</li>
+    <li>[CS2303] Systems Programming Concepts</li>
+    <li>[CS2223] Algorithms</li>
+    <li>[CS2022] Discrete Mathematics</li>
+    <li>[CS2011] Introduction to Machine Organization and Assembly Language</li>
+    <li>[CS3043] Social Implications of Information Processing</li>
+    <li>[CS4342] Machine Learning</li>
+    <li>[CS3013] Operating Systems</li>
+    <li>[CS3431] Database Systems</li>
+    <li>[CS3733] Software Engineering</li>
+    <li>[CS4343] Deep Learning (In Progress)</li>
+    <li>[CS4241] Webware (In Progress)</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <p>
+    <b>Experience with the following technologies</b>
+  </p>
+  <ul>
+    <li>HTML: Some</li>
+    <li>CSS: Some</li>
+    <li>JavaScript / Typescript: Some</li>
+  </ul>
+  <p>
+    <b>Working experience</b>
+  </p>
+  <ul>
+    <li>Unity Provisions <a href="https://www.unityprovisions.org" target="_blank" rel="noopener noreferrer">(Website
+        Rebuild)</a></li>
+    <li>Maine Adaptive</li>
+    <li>WPI CS Department</li>
+    <li>Iridium Satellite</li>
+  </ul>
+  <p>
+    <b>Color palette for this site</b>
+  </p>
+  <img src="color_palette.png" alt="color palette for this site" />
+  <footer>
+    <nav>
+      <p>
+        <!-- Links open to a new tab. Source: https://stackoverflow.com/questions/15551779/open-link-in-new-tab-or-window -->
+        <a href="https://github.com/ojnguyen" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/owen-nguyen-473110325/" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.wpi.edu" target="_blank" rel="noopener noreferrer">WPI</a>
+        <a href="/">Home</a>
+      </p>
+    </nav>
+  </footer>
+  <script>
+    const heading = document.querySelector('h1')
+    let t = 0
+
+    function animateH1() {
+      // Base color: #37 66 82
+      t += 0.035
+      const blue = Math.round(130 + Math.sin(t) * 20) // Calculates a blue value based on a sine wave (NOTE: 130 is the base blue value "82" in hex)
+      heading.style.backgroundColor = '#3766' + blue.toString(16) // Converts blue to hexadecimal
+      requestAnimationFrame(animateH1)
+    }
+
+    // requestAnimationFrame runs just before the next rerender, causing smoothness
+    requestAnimationFrame(animateH1)
+  </script>
+</body>
+
 </html>

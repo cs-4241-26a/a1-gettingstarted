@@ -1,0 +1,22 @@
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #007FFF;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #7600FF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: #2300FF;
+    color: #00D0FF;
+}

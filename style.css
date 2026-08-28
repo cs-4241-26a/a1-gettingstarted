@@ -1,0 +1,38 @@
+/*
+colors from wheel:
+#D77D2F
+#A37145
+#705946
+#3D3732
+#332D28
+*/
+
+* {
+    text-align: center;
+    color: #332D28;
+    background-color: #D77D2F;
+}
+
+h1 {
+    color: #3D3732;
+    background-color: #705946;
+    border: 8px solid #332D28;
+    padding: 8px;
+}
+
+h2 {
+    color: #3D3732;
+    background-color: #A37145;
+    border: 4px solid #332D28;
+    padding: 4px;
+}
+
+p {
+    text-align: left;
+}
+
+li {
+    text-align: left;
+    color: #3D3732;
+}
+

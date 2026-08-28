@@ -10,6 +10,9 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
+  if( filename === 'myStyle.css' ) {
+     response.setHeader( 'Content-Type', 'text/css' )
+   }
    fs.readFile( filename, function( err, content ) {
      response.end( content, 'utf-8' )
    })

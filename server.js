@@ -27,7 +27,7 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
-   if( filename === 'main.css' ) {
+   if( filename === 'style.css' ) {
      response.setHeader( 'Content-Type', 'text/css' )
    }
    fs.readFile( filename, function( err, content ) {

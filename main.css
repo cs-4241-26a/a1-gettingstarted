@@ -1,0 +1,60 @@
+:root{
+    --primary-color: #002E42;
+    --secondary-color: #175975;
+    --tertiary-color: #438AA8;
+    --quaternary-color: #84C1DB;
+    --background-color: #CCF0FF;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: 'Betania Patmos', cursive;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Kablammo', cursive;
+    font-size: 4rem;
+}
+
+.subtitle{
+    font-family: 'Short Stack', cursive;
+    font-size: 2rem;
+}
+
+table{
+    border-collapse: separate;
+    border-style: solid;
+    border-color: var(--secondary-color);
+}
+
+thead{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 20px;
+}
+
+
+.kablammo-customfont {
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+            "MORF" 0;
+}
+
+.betania-patmos-regular {
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.short-stack-regular {
+    font-family: "Short Stack", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

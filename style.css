@@ -1,0 +1,22 @@
+body {
+  background-color: #382131;
+  color: #F2ECEF;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+h1 {
+  color: #B782A6;
+}
+
+h2 {
+  color: #9FB882;
+}
+
+section {
+  background-color: #213827;
+  padding: 1rem;
+}
+
+a {
+  color: #82B88F;
+}

@@ -1,8 +1,8 @@
 {
-  "name": "a1-gettingstarted",
+  "name": "a1-lexmoulton",
   "version": "0.1.0",
-  "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
+  "description": "WPI CS 4241 first assignment - Lex Moulton",
+  "author": "Lex Moulton",
   "scripts": {
     "start": "node server.js"
   }

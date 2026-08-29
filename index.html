@@ -3,26 +3,160 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #F4F1E8;
+      font-family: "Miranda Sans";
+    }
+
+    p{
+      color: #ADD2EC;
+      font-family: "Miranda Sans";
+      font-size: 18px;
+    }
+
+    header {
+      background-color: #3A211C;
+      color: #F4F1E8;
+      font-family: "Miranda Sans";
+      padding: 5px;
+    }
+
+    h1 {
+      color: #ADD2EC;
+      font-family: "Miranda Sans";
+    }
+
+    h2 {
+      color: #674635;
+      font-family: "Miranda Sans";
+    }
+
+    table, th, td {
+      border: 2px solid #3A211C;
+      color: #78A3C6;
+      border-collapse: collapse;
+      text-align: left;
+      padding: 10px;
+      font-family: "Miranda Sans";
+    }
+
+    footer {
+      background-color: #3A211C;
+      color: #ADD2EC;
+      text-align: right;
+      padding: 12px;
+      font-family: "Miranda Sans";
+    }
+
+    ul {
+      color: #78A3C6;
+      font-family: "Miranda Sans";
+    }
+
+    a {
+      color: #ADD2EC;
+      font-family: "Miranda Sans";
+    }
+
+  </style>
+  </head>
+
+  <body>
+    <header>
+    <h1 id="animate">Information about Angela Long</h1>
     <p>
-      Working experience
+      Computer Science Major | Class of 2027
     </p>
+  </header>
+
+  <section>
+  <h2>Previous Computer Science Courses</h2>
+  <table>
+    <tr>
+      <th>Course</th>
+      <th>Course Name</th>
+    </tr>
+    <tr>
+      <td>CS 1101</td>
+      <td>Intro to Programming Design</td>
+    </tr>
+    <tr>
+      <td>CS 2102</td>
+      <td>Object-Oriented Design Concepts</td>
+    </tr>
+    <tr>
+      <td>CS 2011</td>
+      <td>Intro to Machine Organization</td>
+    </tr>
+    <tr>
+      <td>CS 3133</td>
+      <td>Foundations of Computer Science</td>
+    </tr>
+    <tr>
+      <td>CS 3013</td>
+      <td>Operating Systems</td>
+    </tr>
+    <tr>
+      <td>CS 3733</td>
+      <td>Software Engineering</td>
+    </tr>
+    <tr>
+      <td>CS 3516</td>
+      <td>Computer Networks</td>
+    </tr>
+    <tr>
+      <td>CS 3041</td>
+      <td>Human Computer Interaction</td>
+    </tr>
+    <tr>
+      <td>CS 3043</td>
+      <td>Social Implications</td>
+    </tr>
+    <tr>
+      <td>CS 3431</td>
+      <td>Database Systems I</td>
+    </tr>
+    <tr>
+      <td>CS 4518</td>
+      <td>Mobile and Ubiquitous Computing</td>
+    </tr>
+  </table>
+  </section>
+
+  <section>
+  <h2>Experience</h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML (some)</li>
+      <li>CSS (some)</li>
+      <li>JavaScript / Typescript (some)</li>
     </ul>
+  </section>
+
+    <footer>
+      <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science#CS-4241">WPI CS4241 Webware</a>
+    </footer>
+
+    <script>
+      let id = null;
+      const title = document.getElementById("animate");
+      let pos = -450;
+    
+      id = setInterval(frame, 15);
+    
+      function frame() {
+        if (pos == 0) {
+          clearInterval(id);
+        } else {
+          pos++;
+          title.style.marginLeft = pos + "px";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -1,28 +1,111 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
 
-    <h2>Experience</h2>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+    font-family: 'Roboto', sans-serif;
+    margin: 40px;
+  }
+
+    h1 {
+      font-size: 36px;
+      color: #366F42;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #E28C02;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    li {
+      margin-bottom: 5px;
+      border-left: 4px solid #CE981C;
+      padding-left: 8px;
+    }
+
+    header {
+    border-bottom: 4px solid #6A97EC;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #D186A5;
+  }
+  </style>
+</head>
+  <body>
+  <header>
+    <h1>Information about Shubham Kumar</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Shubham Kumar, Class of 2027
+      </p>
+
+      <p>
+        Computer Science major, Data Science minor
+      </p>
+
+      <p>
+        Previous Computer Science courses at WPI: CS 2102, CS 2223, CS 3013,
+        CS 3043, CS 3133, CS 3431, CS 4432, CS 4433, CS 4516, CS 4518,
+        CS 4731, CS 534, CS 539, CS 551, and CS 554
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <p>
+        Experience with web technologies
+      </p>
+
+      <ul>
+        <li>HTML: Some</li>
+        <li>CSS: Some</li>
+        <li>JavaScript / TypeScript: Some</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
     <p>
-      Working experience
+      CS 4241 Webware -
+      <a href="https://www.wpi.edu/" target="_blank">Worcester Polytechnic Institute</a>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+  </footer>
+
+  <script>
+    const heading = document.querySelector('h1');
+    let opacity = 0;
+
+    heading.style.opacity = opacity;
+
+    function fadeIn() {
+      opacity += 0.02;
+      heading.style.opacity = opacity;
+
+      if (opacity < 1) {
+        requestAnimationFrame(fadeIn);
+      }
+    }
+
+    requestAnimationFrame(fadeIn);
+  </script>
+</body>
 </html>

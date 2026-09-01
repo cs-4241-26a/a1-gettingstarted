@@ -3,26 +3,88 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Comic Neue', cursive;
+        background-color: #ACDB6E;
+      }
+      h1 {
+        color: #274DEA;
+      }
+
+      h2 {
+        text-shadow: 10px 3px #EEA19E;
+      }
+
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: #BFF6DD;
+
+      }
+
+      .some { background-color: #EEA19E; }
+      .alot { background-color: #ACDB6E; }
+      .none { background-color: #BFF6DD; }
+      footer {
+        background-color: #8C4F45;
+        color: white;
+      }
+      
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Mohammed Musawwir</h1>
     <p>
-    Charlie Roberts
+      Hey guys. I am a Computer Science major, class of 2027. I do ML/AI work. I also love arabic poetry.
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+
+    <section id="poems"> 
+      <h2>Arabic Poems</h2>
+      <p>
+        Arabic poems can be really visceral and unique because there are like 100 words for the same thing 
+        but each with a specific nuance. So when you study it your mind kind of gets blown 
+        and especially when you understand the background history depending on what you are reading
+      </p>
+
+      <img src="couplets.jpeg" alt="2 couplets of The Mantle Ode ">
+
+      <p>Is it from remebering your neighbors by Dhu Salam,</p> 
+      <p>That you shed tears mixed with blood from your eyes?</p>
+      <p>Or has the wind blown from the direction of Kazima?</p> 
+      <p>Or lightning struck in the darkness of Idam?</p> 
+
+      <section id="courses">
+        <h2>Previous CS Courses</h2>
+        <table>
+          <tr><th>Course</th><th>Title</th></tr>
+          <tr><td>CS 1101</td><td>Introduction to Program Design</td></tr>
+          <tr><td>CS 2102</td><td>Object-Oriented Design Concepts</td></tr>
+        </table>
+      </section>
+    </section>
 
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>MGH</li>
       <li>WPI</li>
+      <li>John Hancock</li>
     </ul>
+
+    <footer>
+      <p>2026 Mohammed Musawwir</p>
+    </footer>
+
+    <script>
+      document.body.style.opacity = 0;
+      window.onload = function () {
+        document.body.style.transition = "opacity 1s";
+        document.body.style.opacity = 1;
+      };
+    </script>
   </body>
 </html>

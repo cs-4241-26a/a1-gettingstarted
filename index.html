@@ -3,26 +3,222 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+      :root {
+        --text: #FC9DCC; 
+        --headers: #9DBEFC;     
+        --animate1: #9DFC9D;  
+        --animate2: #FCDE9D;   
+        --background: #A8A6A7;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--background);
+        color: var(--background);
+        line-height: 2.0;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: var(--headers);
+        color: black;
+        text-align: center;
+        padding: 3rem 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-bottom: 4px solid var(--text);
+      }
+
+      header h1 {
+        margin: 0 0 0.5rem 0;
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      header p {
+        margin: 0.3rem 0;
+        font-weight: 300;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 3rem auto;
+        background: white;
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      table {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+
+      th,td {
+        padding: 10px 10px;
+        text-align: center;
+        border-bottom: 1px solid black;
+      }
+
+      th {
+        color: var(--headers);
+        font-weight: 700;
+        background-color: var(--animate2);
+      }
+
+      tr:hover {
+        background-color: var(--headers);
+      }
+
+      section {
+        margin-bottom: 5rem;
+      }
+
+      section:last-of-type {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        color: var(--headers);
+        border-bottom: 5px solid var(--text);
+        padding-bottom: 0.2rem;
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 0.5rem 0;
+        transition: transform 0.2s ease;
+      }
+
+      li:hover {
+        transform: translateX(4px);
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        color: #222222;
+        font-weight: 300;
+      }
+
+      #animation {
+        width: 200px;
+        height: 200px;
+        background-color: var(--animate1);
+        margin: 10px auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.3s ease;
+      }
+
+      #animation:hover {
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Information about Aishwarya Silam</h1>
+      <p><strong>Aishwarya Silam</strong></p>
+      <p>Class of 2027 | Major: CS | Minor: DS</p>
+    </header>
+    
+    <main>
+      <section>
+        <h2>Previous WPI CS Coursework</h2>
+        <ul>
+          <li><strong>Algorithms</strong></li>
+          <li><strong>Foundations</strong></li>
+          <li><strong>Object Oriented</strong></li>
+          <li><strong>Intro to AI</strong></li>
+          <li><strong>Graphic Design</strong></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th> Level(A lot/Some/None)</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><strong>HTML:</strong></td>
+              <td>A lot</td>
+            </tr>
+            <tr>
+              <td><strong>CSS:</strong></td>
+              <td>A lot</td>
+            </tr>
+            <tr>
+              <td><strong>JavaScript/TypeScript:</strong></td>
+              <td>A lot</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2> Color Palette (Adobe Generated)</h2>
+        <p> This is the custom color palette I used for this webpage!</p>
+        <img src="colors.png" alt="Adobe Color Wheel" style="max-width:100%; height: auto; border: 3px solid var(--text); box-shadow: 0 6px 12px var(--background); margin-top: 1rem;">
+      </section>
+      
+      <section>
+        <h2>Animation</h2>
+        <p>Press the square for a surprise!</p>
+        <div id="animation"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Aishwarya Silam Webware</p>
+    </footer>
+
+    <script>
+      const square = document.getElementById('animation');
+      
+      const palette = [
+        'var(--animate1)', 
+        'var(--animate2)', 
+        'var(--text)', 
+        'var(--headers)', 
+        'var(--background)'
+      ];
+      
+      let index = 0;
+      let sqRotate = 0;
+
+      square.addEventListener('click', () => {
+        index = (index + 1) % palette.length;
+
+        sqRotate += 90;
+
+        square.style.backgroundColor = palette[index];
+        square.style.transform = `rotate(${sqRotate}deg)`;
+      });
+    </script>
   </body>
 </html>
